@@ -1,0 +1,494 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.05 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.06 secs
+ 
+--> Reading design: TS_BRAM_TEST.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TS_BRAM_TEST.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TS_BRAM_TEST"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-pq208
+
+---- Source Options
+Top Module Name                    : TS_BRAM_TEST
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "sdp_bram.v" in library work
+Compiling verilog file "TS_BRAM_TEST.v" in library work
+Module <sdp_bram> compiled
+Module <TS_BRAM_TEST> compiled
+No errors in compilation
+Analysis of file <"TS_BRAM_TEST.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <TS_BRAM_TEST> in library <work>.
+
+Analyzing hierarchy for module <sdp_bram> in library <work> with parameters.
+	DWIDTH = "00000000000000000000000000001001"
+	LEN = "00000000000000000000100000000000"
+	LOG_LEN = "00000000000000000000000000001011"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <TS_BRAM_TEST>.
+Module <TS_BRAM_TEST> is correct for synthesis.
+ 
+Analyzing module <sdp_bram> in library <work>.
+	DWIDTH = 32'sb00000000000000000000000000001001
+	LEN = 32'sb00000000000000000000100000000000
+	LOG_LEN = 32'sb00000000000000000000000000001011
+Module <sdp_bram> is correct for synthesis.
+ 
+    Set property "ram_style = block" for signal <ram>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <disp_cnt> in unit <TS_BRAM_TEST> has a constant value of 00 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <addra> in unit <TS_BRAM_TEST> has a constant value of 00000000000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <sdp_bram>.
+    Related source file is "sdp_bram.v".
+    Found 2048x9-bit dual-port RAM <Mram_ram> for signal <ram>.
+    Found 9-bit register for signal <doa>.
+    Found 9-bit register for signal <dob>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  18 D-type flip-flop(s).
+Unit <sdp_bram> synthesized.
+
+
+Synthesizing Unit <TS_BRAM_TEST>.
+    Related source file is "TS_BRAM_TEST.v".
+WARNING:Xst:1780 - Signal <ram_in_buffer> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <disp_cnt> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <wea> equivalent to <ena> has been removed
+    Found 4x4-bit ROM for signal <SEG_COM$mux0000> created at line 119.
+    Found 4-bit register for signal <SEG_COM>.
+    Found 8-bit register for signal <SEG_DATA>.
+    Found 32-bit register for signal <data>.
+    Found 9-bit register for signal <dla>.
+    Found 1-bit register for signal <ena>.
+    Found 1-bit register for signal <enb>.
+    Found 8-bit adder for signal <$add0000> created at line 108.
+    Found 2-bit up counter for signal <CNT_SCAN>.
+    Found 11-bit comparator greatequal for signal <LED$cmp_ge0000> created at line 49.
+    Found 8-bit 4-to-1 multiplexer for signal <SEG_DATA$mux0000> created at line 119.
+    Found 1-bit register for signal <sign_in_data>.
+    Found 1-bit register for signal <sign_use_data>.
+    Found 11-bit updown counter for signal <stack_top>.
+    Found 9-bit comparator lessequal for signal <stack_top$cmp_le0000> created at line 80.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   2 Counter(s).
+	inferred  57 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <TS_BRAM_TEST> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 2048x9-bit dual-port RAM                              : 1
+# ROMs                                                 : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 2
+ 11-bit updown counter                                 : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 41
+ 1-bit register                                        : 36
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+ 9-bit register                                        : 3
+# Comparators                                          : 2
+ 11-bit comparator greatequal                          : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <dla_0> (without init value) has a constant value of 0 in block <TS_BRAM_TEST>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dla_8> (without init value) has a constant value of 0 in block <TS_BRAM_TEST>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <TS_BRAM_TEST>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_SEG_COM_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <TS_BRAM_TEST> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sdp_bram>.
+INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <doa> <dob>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 9-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | fall     |
+    |     enA            | connected to signal <ena>           | high     |
+    |     weA            | connected to signal <wea>           | high     |
+    |     addrA          | connected to signal <addra>         |          |
+    |     diA            | connected to signal <dla>           |          |
+    |     doA            | connected to signal <doa>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 9-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk>           | fall     |
+    |     enB            | connected to signal <enb>           | high     |
+    |     addrB          | connected to signal <addrb>         |          |
+    |     doB            | connected to signal <dob>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <sdp_bram> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 2048x9-bit dual-port block RAM                        : 1
+# ROMs                                                 : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 2
+ 11-bit updown counter                                 : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 57
+ Flip-Flops                                            : 57
+# Comparators                                          : 2
+ 11-bit comparator greatequal                          : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 8
+ 1-bit 4-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <dla_0> (without init value) has a constant value of 0 in block <TS_BRAM_TEST>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dla_8> (without init value) has a constant value of 0 in block <TS_BRAM_TEST>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <TS_BRAM_TEST> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TS_BRAM_TEST, actual ratio is 3.
+FlipFlop enb has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TS_BRAM_TEST.ngr
+Top Level Output File Name         : TS_BRAM_TEST
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 83
+
+Cell Usage :
+# BELS                             : 164
+#      GND                         : 2
+#      INV                         : 5
+#      LUT1                        : 1
+#      LUT2                        : 43
+#      LUT3                        : 32
+#      LUT3_L                      : 3
+#      LUT4                        : 37
+#      MUXCY                       : 14
+#      MUXF5                       : 15
+#      VCC                         : 1
+#      XORCY                       : 11
+# FlipFlops/Latches                : 70
+#      FD                          : 10
+#      FDE                         : 43
+#      FDR                         : 3
+#      FDRE                        : 11
+#      FDS                         : 3
+# RAMS                             : 1
+#      RAMB16                      : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 82
+#      IBUF                        : 10
+#      OBUF                        : 72
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200pq208-4 
+
+ Number of Slices:                       65  out of   1920     3%  
+ Number of Slice Flip Flops:             70  out of   3840     1%  
+ Number of 4 input LUTs:                121  out of   3840     3%  
+ Number of IOs:                          83
+ Number of bonded IOBs:                  83  out of    141    58%  
+ Number of BRAMs:                         1  out of     12     8%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 71    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.843ns (Maximum Frequency: 171.145MHz)
+   Minimum input arrival time before clock: 10.479ns
+   Maximum output required time after clock: 9.863ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.843ns (frequency: 171.145MHz)
+  Total number of paths / destination ports: 350 / 136
+-------------------------------------------------------------------------
+Delay:               5.843ns (Levels of Logic = 2)
+  Source:            sign_use_data (FF)
+  Destination:       stack_top_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: sign_use_data to stack_top_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.720   1.246  sign_use_data (sign_use_data)
+     LUT2:I0->O            6   0.551   1.029  sign_data1 (sign_data)
+     LUT4:I3->O           11   0.551   1.144  stack_top_not00021 (stack_top_not0002)
+     FDRE:CE                   0.602          stack_top_0
+    ----------------------------------------
+    Total                      5.843ns (2.424ns logic, 3.419ns route)
+                                       (41.5% logic, 58.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 1436 / 87
+-------------------------------------------------------------------------
+Offset:              10.479ns (Levels of Logic = 8)
+  Source:            in<4> (PAD)
+  Destination:       dla_1 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: in<4> to dla_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   0.821   1.463  in_4_IBUF (in_4_IBUF)
+     LUT4:I0->O            1   0.551   0.000  dla_or0001141 (dla_or0001141)
+     MUXF5:I0->O           1   0.360   1.140  dla_or000114_f5 (dla_or000114)
+     LUT2:I0->O            1   0.551   0.801  dla_or000123_SW0 (N55)
+     MUXF5:S->O            1   0.621   0.869  dla_or000198_SW0_f5 (N53)
+     LUT4:I2->O            8   0.551   1.278  dla_or000198 (dla_or0001)
+     LUT3_L:I1->LO         1   0.551   0.168  dla_mux0000<7>_SW0 (N35)
+     LUT4:I2->O            1   0.551   0.000  dla_mux0000<7> (dla_mux0000<7>)
+     FDE:D                     0.203          dla_1
+    ----------------------------------------
+    Total                     10.479ns (4.760ns logic, 5.719ns route)
+                                       (45.4% logic, 54.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 64 / 54
+-------------------------------------------------------------------------
+Offset:              9.863ns (Levels of Logic = 6)
+  Source:            stack_top_0 (FF)
+  Destination:       LED (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: stack_top_0 to LED
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.720   1.216  stack_top_0 (stack_top_0)
+     LUT1:I0->O            1   0.551   0.000  Mcompar_LED_cmp_ge0000_cy<0>_rt (Mcompar_LED_cmp_ge0000_cy<0>_rt)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_LED_cmp_ge0000_cy<0> (Mcompar_LED_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_LED_cmp_ge0000_cy<1> (Mcompar_LED_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_LED_cmp_ge0000_cy<2> (Mcompar_LED_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.303   0.801  Mcompar_LED_cmp_ge0000_cy<3> (LED_OBUF)
+     OBUF:I->O                 5.644          LED_OBUF (LED)
+    ----------------------------------------
+    Total                      9.863ns (7.846ns logic, 2.017ns route)
+                                       (79.5% logic, 20.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 45.00 secs
+Total CPU time to Xst completion: 45.43 secs
+ 
+--> 
+
+Total memory usage is 337464 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

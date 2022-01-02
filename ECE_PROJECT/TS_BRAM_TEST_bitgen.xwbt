@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\prj\Porject_exp\Porject_exp\TS_BRAM_TEST.ncd
+OUTFILE=D:\prj\Porject_exp\Porject_exp\TS_BRAM_TEST.bit
+FAMILY=Spartan3
+PART=xc3s200-4pq208
+WORKINGDIR=D:\prj\Porject_exp\Porject_exp
+LICENSE=WebPack
+USER_INFO=210823898_1777521306_0_577

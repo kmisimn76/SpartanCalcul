@@ -1,0 +1,3 @@
+verilog work "SB_PLMA_ARITHMETIC.v"
+verilog work "TB_PLMA.v"
+verilog work "D:/Util/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v"

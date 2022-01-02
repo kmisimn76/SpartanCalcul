@@ -1,0 +1,2 @@
+verilog work "netgen/par/MB_INTERFACE_timesim.v"
+verilog work "TB_INTERFACE.v"

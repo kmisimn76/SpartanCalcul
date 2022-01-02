@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_B2NCONV.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/SB_B2NCONV.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/SB_B2NCONV.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 SB_B2NCONV.ngc SB_B2NCONV.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o SB_B2NCONV_map.ncd SB_B2NCONV.ngd SB_B2NCONV.pcf 
+par -w -intstyle ise -ol high -t 1 SB_B2NCONV_map.ncd SB_B2NCONV.ncd SB_B2NCONV.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SB_B2NCONV.twx SB_B2NCONV.ncd -o SB_B2NCONV.twr SB_B2NCONV.pcf 
+netgen -intstyle ise -s 4  -pcf SB_B2NCONV.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim SB_B2NCONV.ncd SB_B2NCONV_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/SB_B2NCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/SB_B2NCONV.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 SB_B2NCONV.ngc SB_B2NCONV.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o SB_B2NCONV_map.ncd SB_B2NCONV.ngd SB_B2NCONV.pcf 
+par -w -intstyle ise -ol high -t 1 SB_B2NCONV_map.ncd SB_B2NCONV.ncd SB_B2NCONV.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SB_B2NCONV.twx SB_B2NCONV.ncd -o SB_B2NCONV.twr SB_B2NCONV.pcf 
+netgen -intstyle ise -s 4  -pcf SB_B2NCONV.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim SB_B2NCONV.ncd SB_B2NCONV_timesim.v 

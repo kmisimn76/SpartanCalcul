@@ -1,0 +1,489 @@
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "D:/Porject_exp_11.26/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+netgen -intstyle ise -s 4  -pcf MB_INTERFACE.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_INTERFACE.ncd MB_INTERFACE_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_INTERFACE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MB_INTERFACE.ucf -p xc3s200-pq208-4 MB_INTERFACE.ngc MB_INTERFACE.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_INTERFACE_map.ncd MB_INTERFACE.ngd MB_INTERFACE.pcf 
+par -w -intstyle ise -ol high -t 1 MB_INTERFACE_map.ncd MB_INTERFACE.ncd MB_INTERFACE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_INTERFACE.twx MB_INTERFACE.ncd -o MB_INTERFACE.twr MB_INTERFACE.pcf -ucf MB_INTERFACE.ucf 
+bitgen -intstyle ise -f MB_INTERFACE.ut MB_INTERFACE.ncd 

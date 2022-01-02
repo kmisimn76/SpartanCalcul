@@ -1,0 +1,589 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.44 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.44 secs
+ 
+--> Reading design: SB_B2NCONV.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SB_B2NCONV.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SB_B2NCONV"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-pq208
+
+---- Source Options
+Top Module Name                    : SB_B2NCONV
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SB_B2NCONV.v" in library work
+Module <SB_B2NCONV> compiled
+No errors in compilation
+Analysis of file <"SB_B2NCONV.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <SB_B2NCONV> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <SB_B2NCONV>.
+Module <SB_B2NCONV> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <result<31>> in unit <SB_B2NCONV> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <SB_B2NCONV>.
+    Related source file is "SB_B2NCONV.v".
+    Found 1-bit register for signal <complete>.
+    Found 31-bit register for signal <result<30:0>>.
+    Found 8-bit adder for signal <$add0000> created at line 60.
+    Found 4-bit adder for signal <$add0001> created at line 73.
+    Found 4-bit adder for signal <$add0002> created at line 74.
+    Found 4-bit adder for signal <$add0003> created at line 75.
+    Found 4-bit adder for signal <$add0004> created at line 76.
+    Found 4-bit adder for signal <$add0005> created at line 77.
+    Found 4-bit adder for signal <$add0006> created at line 78.
+    Found 4-bit adder for signal <$add0007> created at line 79.
+    Found 4-bit adder for signal <$add0008> created at line 80.
+    Found 8-bit adder for signal <$add0009> created at line 99.
+    Found 23-bit adder for signal <$add0010> created at line 100.
+    Found 23-bit adder for signal <$add0011> created at line 103.
+    Found 8-bit adder for signal <add0000$addsub0000> created at line 60.
+    Found 4-bit adder for signal <add0001$addsub0000> created at line 73.
+    Found 4-bit comparator greater for signal <add0001$cmp_gt0000> created at line 73.
+    Found 4-bit comparator greater for signal <add0001$cmp_gt0001> created at line 73.
+    Found 4-bit adder for signal <add0002$addsub0000> created at line 74.
+    Found 4-bit comparator greater for signal <add0002$cmp_gt0000> created at line 74.
+    Found 4-bit adder for signal <add0003$addsub0000> created at line 75.
+    Found 4-bit comparator greater for signal <add0003$cmp_gt0000> created at line 75.
+    Found 4-bit adder for signal <add0004$addsub0000> created at line 76.
+    Found 4-bit comparator greater for signal <add0004$cmp_gt0000> created at line 76.
+    Found 4-bit adder for signal <add0005$addsub0000> created at line 77.
+    Found 4-bit comparator greater for signal <add0005$cmp_gt0000> created at line 77.
+    Found 4-bit adder for signal <add0006$addsub0000> created at line 78.
+    Found 4-bit comparator greater for signal <add0006$cmp_gt0000> created at line 78.
+    Found 4-bit adder for signal <add0007$addsub0000> created at line 79.
+    Found 4-bit comparator greater for signal <add0007$cmp_gt0000> created at line 79.
+    Found 23-bit adder for signal <add0011$addsub0000> created at line 103.
+    Found 5-bit comparator greatequal for signal <complete$cmp_ge0000> created at line 54.
+    Found 1-bit 4-to-1 multiplexer for signal <complete$mux0000>.
+    Found 6-bit register for signal <exp_cnt>.
+    Found 6-bit adder for signal <exp_cnt$addsub0000> created at line 57.
+    Found 6-bit 4-to-1 multiplexer for signal <exp_cnt$mux0000>.
+    Found 1-bit register for signal <is_rat>.
+    Found 1-bit 4-to-1 multiplexer for signal <is_rat$mux0000>.
+    Found 5-bit register for signal <rat_cnt>.
+    Found 5-bit 4-to-1 multiplexer for signal <rat_cnt$mux0000>.
+    Found 5-bit adder for signal <rat_cnt$share0000>.
+    Found 32-bit register for signal <rat_tmp>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_0$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_1$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_10$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_11$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_12$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_13$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_14$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_15$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_16$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_17$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_18$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_19$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_2$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_20$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_21$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_22$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_23$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_24$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_25$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_26$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_27$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_28$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_29$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_3$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_30$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_31$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_4$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_5$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_6$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_7$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_8$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_9$mux0000>.
+    Found 3-bit register for signal <rat_tmp_cnt>.
+    Found 3-bit adder for signal <rat_tmp_cnt$addsub0000> created at line 117.
+    Found 3-bit 4-to-1 multiplexer for signal <rat_tmp_cnt$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_0$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_1$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_10$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_11$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_12$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_13$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_14$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_15$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_16$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_17$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_18$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_19$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_2$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_20$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_21$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_22$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_23$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_24$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_25$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_26$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_27$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_28$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_29$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_3$mux0000>.
+    Found 26-bit adder for signal <result_30$add0000> created at line 94.
+    Found 26-bit comparator greatequal for signal <result_30$cmp_ge0000> created at line 94.
+    Found 1-bit 4-to-1 multiplexer for signal <result_30$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_4$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_5$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_6$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_7$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_8$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_9$mux0000>.
+    Found 23-bit register for signal <tmp>.
+    Found 22-bit adder for signal <tmp$add0000> created at line 96.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_0$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_1$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_10$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_11$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_12$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_13$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_14$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_15$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_16$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_17$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_18$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_19$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_2$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_20$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_21$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_22$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_3$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_4$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_5$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_6$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_7$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_8$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_9$mux0000>.
+    Summary:
+	inferred 102 D-type flip-flop(s).
+	inferred  26 Adder/Subtractor(s).
+	inferred  10 Comparator(s).
+	inferred 102 Multiplexer(s).
+Unit <SB_B2NCONV> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 26
+ 22-bit adder                                          : 1
+ 23-bit adder                                          : 3
+ 26-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 15
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 3
+# Registers                                            : 91
+ 1-bit register                                        : 88
+ 3-bit register                                        : 1
+ 5-bit register                                        : 1
+ 6-bit register                                        : 1
+# Comparators                                          : 10
+ 26-bit comparator greatequal                          : 1
+ 4-bit comparator greater                              : 8
+ 5-bit comparator greatequal                           : 1
+# Multiplexers                                         : 91
+ 1-bit 4-to-1 multiplexer                              : 88
+ 3-bit 4-to-1 multiplexer                              : 1
+ 5-bit 4-to-1 multiplexer                              : 1
+ 6-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 26
+ 22-bit adder                                          : 1
+ 23-bit adder                                          : 3
+ 26-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 15
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 3
+# Registers                                            : 102
+ Flip-Flops                                            : 102
+# Comparators                                          : 10
+ 26-bit comparator greatequal                          : 1
+ 4-bit comparator greater                              : 8
+ 5-bit comparator greatequal                           : 1
+# Multiplexers                                         : 91
+ 1-bit 4-to-1 multiplexer                              : 88
+ 3-bit 4-to-1 multiplexer                              : 1
+ 5-bit 4-to-1 multiplexer                              : 1
+ 6-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SB_B2NCONV> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SB_B2NCONV, actual ratio is 19.
+FlipFlop rat_cnt_0 has been replicated 1 time(s)
+FlipFlop rat_cnt_1 has been replicated 1 time(s)
+FlipFlop rat_cnt_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 105
+ Flip-Flops                                            : 105
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : SB_B2NCONV.ngr
+Top Level Output File Name         : SB_B2NCONV
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 40
+
+Cell Usage :
+# BELS                             : 884
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 7
+#      LUT2                        : 81
+#      LUT2_D                      : 9
+#      LUT2_L                      : 1
+#      LUT3                        : 60
+#      LUT3_D                      : 17
+#      LUT3_L                      : 6
+#      LUT4                        : 339
+#      LUT4_D                      : 12
+#      LUT4_L                      : 125
+#      MULT_AND                    : 21
+#      MUXCY                       : 99
+#      MUXF5                       : 29
+#      VCC                         : 1
+#      XORCY                       : 74
+# FlipFlops/Latches                : 105
+#      FD                          : 9
+#      FDS                         : 96
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 39
+#      IBUF                        : 6
+#      OBUF                        : 33
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200pq208-4 
+
+ Number of Slices:                      345  out of   1920    17%  
+ Number of Slice Flip Flops:            105  out of   3840     2%  
+ Number of 4 input LUTs:                659  out of   3840    17%  
+ Number of IOs:                          40
+ Number of bonded IOBs:                  40  out of    141    28%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 105   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 11.121ns (Maximum Frequency: 89.920MHz)
+   Minimum input arrival time before clock: 11.392ns
+   Maximum output required time after clock: 7.601ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 11.121ns (frequency: 89.920MHz)
+  Total number of paths / destination ports: 22313 / 201
+-------------------------------------------------------------------------
+Delay:               11.121ns (Levels of Logic = 23)
+  Source:            tmp_0 (FF)
+  Destination:       tmp_21 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: tmp_0 to tmp_21
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             12   0.720   1.313  tmp_0 (tmp_0)
+     LUT3:I1->O            1   0.551   0.869  Madd__add0011R21 (Madd__add0011R2)
+     LUT3:I2->O            1   0.551   0.000  Madd__add0011_Madd_lut<3> (Madd__add0011_Madd_lut<3>)
+     MUXCY:S->O            1   0.500   0.000  Madd__add0011_Madd_cy<3> (Madd__add0011_Madd_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<4> (Madd__add0011_Madd_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<5> (Madd__add0011_Madd_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<6> (Madd__add0011_Madd_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<7> (Madd__add0011_Madd_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<8> (Madd__add0011_Madd_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<9> (Madd__add0011_Madd_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<10> (Madd__add0011_Madd_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<11> (Madd__add0011_Madd_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<12> (Madd__add0011_Madd_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<13> (Madd__add0011_Madd_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<14> (Madd__add0011_Madd_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<15> (Madd__add0011_Madd_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<16> (Madd__add0011_Madd_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<17> (Madd__add0011_Madd_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<18> (Madd__add0011_Madd_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<19> (Madd__add0011_Madd_cy<19>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<20> (Madd__add0011_Madd_cy<20>)
+     XORCY:CI->O           1   0.904   0.869  Madd__add0011_Madd_xor<21> (_add0011<21>)
+     LUT4:I2->O            1   0.551   0.827  Mmux_tmp_21_mux0000225_SW0 (N128)
+     LUT4:I3->O            1   0.551   0.801  Mmux_tmp_21_mux0000225 (Mmux_tmp_21_mux0000225)
+     FDS:S                     1.026          tmp_21
+    ----------------------------------------
+    Total                     11.121ns (6.442ns logic, 4.679ns route)
+                                       (57.9% logic, 42.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1063 / 201
+-------------------------------------------------------------------------
+Offset:              11.392ns (Levels of Logic = 24)
+  Source:            but_num<3> (PAD)
+  Destination:       tmp_21 (FF)
+  Destination Clock: clk rising
+
+  Data Path: but_num<3> to tmp_21
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   0.821   1.483  but_num_3_IBUF (but_num_3_IBUF)
+     LUT3:I0->O            1   0.551   0.869  Madd__add0011R21 (Madd__add0011R2)
+     LUT3:I2->O            1   0.551   0.000  Madd__add0011_Madd_lut<3> (Madd__add0011_Madd_lut<3>)
+     MUXCY:S->O            1   0.500   0.000  Madd__add0011_Madd_cy<3> (Madd__add0011_Madd_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<4> (Madd__add0011_Madd_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<5> (Madd__add0011_Madd_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<6> (Madd__add0011_Madd_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<7> (Madd__add0011_Madd_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<8> (Madd__add0011_Madd_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<9> (Madd__add0011_Madd_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<10> (Madd__add0011_Madd_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<11> (Madd__add0011_Madd_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<12> (Madd__add0011_Madd_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<13> (Madd__add0011_Madd_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<14> (Madd__add0011_Madd_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<15> (Madd__add0011_Madd_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<16> (Madd__add0011_Madd_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<17> (Madd__add0011_Madd_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<18> (Madd__add0011_Madd_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<19> (Madd__add0011_Madd_cy<19>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__add0011_Madd_cy<20> (Madd__add0011_Madd_cy<20>)
+     XORCY:CI->O           1   0.904   0.869  Madd__add0011_Madd_xor<21> (_add0011<21>)
+     LUT4:I2->O            1   0.551   0.827  Mmux_tmp_21_mux0000225_SW0 (N128)
+     LUT4:I3->O            1   0.551   0.801  Mmux_tmp_21_mux0000225 (Mmux_tmp_21_mux0000225)
+     FDS:S                     1.026          tmp_21
+    ----------------------------------------
+    Total                     11.392ns (6.543ns logic, 4.849ns route)
+                                       (57.4% logic, 42.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              7.601ns (Levels of Logic = 1)
+  Source:            result_22 (FF)
+  Destination:       result<22> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: result_22 to result<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             16   0.720   1.237  result_22 (result_22)
+     OBUF:I->O                 5.644          result_22_OBUF (result<22>)
+    ----------------------------------------
+    Total                      7.601ns (6.364ns logic, 1.237ns route)
+                                       (83.7% logic, 16.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 59.00 secs
+Total CPU time to Xst completion: 58.87 secs
+ 
+--> 
+
+Total memory usage is 353608 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

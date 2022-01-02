@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/sdp_bram.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/sdp_bram.syr" 

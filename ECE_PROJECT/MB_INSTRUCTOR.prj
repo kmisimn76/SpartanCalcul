@@ -1,0 +1,6 @@
+verilog work "sdp_bram.v"
+verilog work "SB_PLMA_ARITHMETIC.v"
+verilog work "SB_MULTIFLIER.v"
+verilog work "SB_DIVIDER.v"
+verilog work "MB_I2P_FIX_ARRANGER.v"
+verilog work "MB_INSTRUCTOR.v"

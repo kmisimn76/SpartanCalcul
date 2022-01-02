@@ -1,0 +1,467 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.37 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.39 secs
+ 
+--> Reading design: divider.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "divider.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "divider"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-pq208
+
+---- Source Options
+Top Module Name                    : divider
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "divider.v" in library work
+Module <divider> compiled
+No errors in compilation
+Analysis of file <"divider.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <divider> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <divider>.
+WARNING:Xst:2323 - "divider.v" line 37: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 37: $display : 피제수: %b 
+WARNING:Xst:2323 - "divider.v" line 41: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 41: $display : 계산후: %b 
+WARNING:Xst:2323 - "divider.v" line 37: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 37: $display : 피제수: %b 
+WARNING:Xst:2323 - "divider.v" line 41: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 41: $display : 계산후: %b 
+WARNING:Xst:2323 - "divider.v" line 37: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 37: $display : 피제수: %b 
+WARNING:Xst:2323 - "divider.v" line 41: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 41: $display : 계산후: %b 
+WARNING:Xst:2323 - "divider.v" line 37: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 37: $display : 피제수: %b 
+WARNING:Xst:2323 - "divider.v" line 41: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 41: $display : 계산후: %b 
+WARNING:Xst:2323 - "divider.v" line 37: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 37: $display : 피제수: %b 
+WARNING:Xst:2323 - "divider.v" line 41: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 41: $display : 계산후: %b 
+WARNING:Xst:2323 - "divider.v" line 37: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 37: $display : 피제수: %b 
+WARNING:Xst:2323 - "divider.v" line 41: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 41: $display : 계산후: %b 
+WARNING:Xst:2323 - "divider.v" line 37: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 37: $display : 피제수: %b 
+WARNING:Xst:2323 - "divider.v" line 41: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 41: $display : 계산후: %b 
+WARNING:Xst:2323 - "divider.v" line 37: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 37: $display : 피제수: %b 
+WARNING:Xst:2323 - "divider.v" line 41: Parameter 2 is not constant in call of system task $display.
+"divider.v" line 41: $display : 계산후: %b 
+Module <divider> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <count> in unit <divider> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <divider>.
+    Related source file is "divider.v".
+WARNING:Xst:1306 - Output <div> is never assigned.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend_tmp_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend_tmp_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend_tmp_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend_tmp_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend_tmp_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend_tmp_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend_tmp_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend_tmp_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend_tmp_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend_tmp_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dividend_tmp_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 4-bit subtractor for signal <$sub0000> created at line 40.
+    Found 4-bit subtractor for signal <$sub0001> created at line 40.
+    Found 4-bit subtractor for signal <$sub0002> created at line 40.
+    Found 4-bit subtractor for signal <$sub0003> created at line 40.
+    Found 4-bit subtractor for signal <$sub0004> created at line 40.
+    Found 4-bit subtractor for signal <$sub0005> created at line 40.
+    Found 4-bit subtractor for signal <$sub0006> created at line 40.
+    Found 4-bit subtractor for signal <$sub0007> created at line 40.
+    Found 4-bit comparator greater for signal <dividend_tmp_10$cmp_gt0000> created at line 29.
+    Found 4-bit comparator greatequal for signal <mux0000$cmp_ge0000> created at line 38.
+    Found 4-bit comparator greatequal for signal <mux0003$cmp_ge0000> created at line 38.
+    Found 4-bit comparator greatequal for signal <mux0006$cmp_ge0000> created at line 38.
+    Found 4-bit comparator greatequal for signal <mux0009$cmp_ge0000> created at line 38.
+    Found 4-bit comparator greatequal for signal <mux0012$cmp_ge0000> created at line 38.
+    Found 4-bit comparator greatequal for signal <mux0015$cmp_ge0000> created at line 38.
+    Found 4-bit comparator greatequal for signal <mux0018$cmp_ge0000> created at line 38.
+    Found 4-bit comparator greatequal for signal <quotient_0$cmp_ge0000> created at line 38.
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+Unit <divider> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 8
+ 4-bit subtractor                                      : 8
+# Latches                                              : 11
+ 1-bit latch                                           : 11
+# Comparators                                          : 9
+ 4-bit comparator greatequal                           : 8
+ 4-bit comparator greater                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 8
+ 4-bit subtractor                                      : 8
+# Latches                                              : 11
+ 1-bit latch                                           : 11
+# Comparators                                          : 9
+ 4-bit comparator greatequal                           : 8
+ 4-bit comparator greater                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <divider> ...
+WARNING:Xst:1710 - FF/Latch <dividend_tmp_10> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dividend_tmp_10> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block divider, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : divider.ngr
+Top Level Output File Name         : divider
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 32
+
+Cell Usage :
+# BELS                             : 70
+#      GND                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 18
+#      LUT4                        : 44
+#      MUXF5                       : 6
+# FlipFlops/Latches                : 8
+#      LD                          : 8
+# IO Buffers                       : 28
+#      IBUF                        : 8
+#      OBUF                        : 20
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200pq208-4 
+
+ Number of Slices:                       36  out of   1920     1%  
+ Number of 4 input LUTs:                 63  out of   3840     1%  
+ Number of IOs:                          32
+ Number of bonded IOBs:                  28  out of    141    19%  
+    IOB Flip Flops:                       8
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+in_OBUF(in1:O)                     | NONE(*)(dividend_tmp_0)| 8     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 39.882ns
+   Maximum output required time after clock: 7.078ns
+   Maximum combinational path delay: 44.315ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'in_OBUF'
+  Total number of paths / destination ports: 391011 / 8
+-------------------------------------------------------------------------
+Offset:              39.882ns (Levels of Logic = 26)
+  Source:            divisor<2> (PAD)
+  Destination:       dividend_tmp_2 (LATCH)
+  Destination Clock: in_OBUF falling
+
+  Data Path: divisor<2> to dividend_tmp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   0.821   1.992  divisor_2_IBUF (divisor_2_IBUF)
+     LUT4:I1->O            1   0.551   0.000  mux0000_cmp_ge0000111 (mux0000_cmp_ge000011)
+     MUXF5:I0->O           2   0.360   1.216  mux0000_cmp_ge000011_f5 (mux0000_cmp_ge0000)
+     LUT3:I0->O            3   0.551   1.246  _mux00021 (_mux0002)
+     LUT4:I0->O            2   0.551   0.877  mux0003_cmp_ge00002 (mux0003_cmp_ge00001)
+     MUXF5:S->O            2   0.621   1.216  _mux00051_f5 (_mux0005)
+     LUT4:I0->O            4   0.551   0.943  mux0006_cmp_ge00002 (Msub__sub0002_cy<1>)
+     LUT4:I3->O            4   0.551   1.256  mux0006_cmp_ge00001 (mux0006_cmp_ge0000)
+     LUT3:I0->O            2   0.551   1.216  _mux00081 (_mux0008)
+     LUT4:I0->O            3   0.551   1.102  mux0009_cmp_ge00002 (Msub__sub0003_cy<1>)
+     LUT3:I1->O            3   0.551   0.975  mux0009_cmp_ge00001_SW0 (N32)
+     LUT3:I2->O            6   0.551   1.342  mux0009_cmp_ge00001 (mux0009_cmp_ge0000)
+     LUT4:I0->O            1   0.551   0.000  _mux001012 (_mux001011)
+     MUXF5:I0->O           3   0.360   1.102  _mux00101_f5 (_mux0010)
+     LUT3:I1->O            4   0.551   0.985  mux0012_cmp_ge0000164_SW0 (N42)
+     LUT3:I2->O            4   0.551   0.917  mux0012_cmp_ge0000164 (mux0012_cmp_ge0000)
+     MUXF5:S->O            3   0.621   0.933  _mux00131_f5 (_mux0013)
+     LUT4:I3->O            4   0.551   0.985  mux0015_cmp_ge0000152_SW0 (N40)
+     LUT3:I2->O            4   0.551   0.985  mux0015_cmp_ge0000152 (mux0015_cmp_ge0000)
+     LUT4:I2->O            3   0.551   0.933  _mux00161 (_mux0016)
+     LUT4:I3->O            4   0.551   0.985  mux0018_cmp_ge0000152_SW0 (N38)
+     LUT3:I2->O            4   0.551   0.985  mux0018_cmp_ge0000152 (mux0018_cmp_ge0000)
+     LUT4:I2->O            3   0.551   0.933  _mux00191 (_mux0019)
+     LUT4:I3->O            4   0.551   0.985  quotient_0_cmp_ge0000151_SW0 (N44)
+     LUT3:I2->O            2   0.551   1.216  quotient_0_cmp_ge0000151 (quotient_0_cmp_ge0000)
+     LUT4:I0->O            1   0.551   0.000  dividend_tmp_2_mux00001 (dividend_tmp_2_mux0000)
+     LD:D                      0.203          dividend_tmp_2
+    ----------------------------------------
+    Total                     39.882ns (14.557ns logic, 25.325ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'in_OBUF'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              7.078ns (Levels of Logic = 1)
+  Source:            dividend_tmp_7 (LATCH)
+  Destination:       dividend_tmp<7> (PAD)
+  Source Clock:      in_OBUF falling
+
+  Data Path: dividend_tmp_7 to dividend_tmp<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.633   0.801  dividend_tmp_7 (dividend_tmp_7)
+     OBUF:I->O                 5.644          dividend_tmp_7_OBUF (dividend_tmp<7>)
+    ----------------------------------------
+    Total                      7.078ns (6.277ns logic, 0.801ns route)
+                                       (88.7% logic, 11.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 88109 / 9
+-------------------------------------------------------------------------
+Delay:               44.315ns (Levels of Logic = 26)
+  Source:            divisor<2> (PAD)
+  Destination:       quotient<0> (PAD)
+
+  Data Path: divisor<2> to quotient<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   0.821   1.992  divisor_2_IBUF (divisor_2_IBUF)
+     LUT4:I1->O            1   0.551   0.000  mux0000_cmp_ge0000111 (mux0000_cmp_ge000011)
+     MUXF5:I0->O           2   0.360   1.216  mux0000_cmp_ge000011_f5 (mux0000_cmp_ge0000)
+     LUT3:I0->O            3   0.551   1.246  _mux00021 (_mux0002)
+     LUT4:I0->O            2   0.551   0.877  mux0003_cmp_ge00002 (mux0003_cmp_ge00001)
+     MUXF5:S->O            2   0.621   1.216  _mux00051_f5 (_mux0005)
+     LUT4:I0->O            4   0.551   0.943  mux0006_cmp_ge00002 (Msub__sub0002_cy<1>)
+     LUT4:I3->O            4   0.551   1.256  mux0006_cmp_ge00001 (mux0006_cmp_ge0000)
+     LUT3:I0->O            2   0.551   1.216  _mux00081 (_mux0008)
+     LUT4:I0->O            3   0.551   1.102  mux0009_cmp_ge00002 (Msub__sub0003_cy<1>)
+     LUT3:I1->O            3   0.551   0.975  mux0009_cmp_ge00001_SW0 (N32)
+     LUT3:I2->O            6   0.551   1.342  mux0009_cmp_ge00001 (mux0009_cmp_ge0000)
+     LUT4:I0->O            1   0.551   0.000  _mux001012 (_mux001011)
+     MUXF5:I0->O           3   0.360   1.102  _mux00101_f5 (_mux0010)
+     LUT3:I1->O            4   0.551   0.985  mux0012_cmp_ge0000164_SW0 (N42)
+     LUT3:I2->O            4   0.551   0.917  mux0012_cmp_ge0000164 (mux0012_cmp_ge0000)
+     MUXF5:S->O            3   0.621   0.933  _mux00131_f5 (_mux0013)
+     LUT4:I3->O            4   0.551   0.985  mux0015_cmp_ge0000152_SW0 (N40)
+     LUT3:I2->O            4   0.551   0.985  mux0015_cmp_ge0000152 (mux0015_cmp_ge0000)
+     LUT4:I2->O            3   0.551   0.933  _mux00161 (_mux0016)
+     LUT4:I3->O            4   0.551   0.985  mux0018_cmp_ge0000152_SW0 (N38)
+     LUT3:I2->O            4   0.551   0.985  mux0018_cmp_ge0000152 (mux0018_cmp_ge0000)
+     LUT4:I2->O            3   0.551   0.933  _mux00191 (_mux0019)
+     LUT4:I3->O            4   0.551   0.943  quotient_0_cmp_ge0000151_SW0 (N44)
+     LUT4:I3->O            1   0.551   0.801  quotient_0_mux00001 (quotient_0_OBUF)
+     OBUF:I->O                 5.644          quotient_0_OBUF (quotient<0>)
+    ----------------------------------------
+    Total                     44.315ns (19.447ns logic, 24.868ns route)
+                                       (43.9% logic, 56.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 41.00 secs
+Total CPU time to Xst completion: 41.50 secs
+ 
+--> 
+
+Total memory usage is 337400 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   30 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

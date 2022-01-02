@@ -1,0 +1,36 @@
+NET "RSTN" LOC = "P57";
+NET "CLK" LOC = "P76";
+
+NET "LED" LOC = "P191";
+
+NET "in<8>" LOC = "P63";
+NET "in<7>" LOC = "P67";
+NET "in<6>" LOC = "P65";
+NET "in<5>" LOC = "P71";
+NET "in<4>" LOC = "P68";
+NET "in<3>" LOC = "P74";
+NET "in<2>" LOC = "P50";
+NET "in<1>" LOC = "P58";
+NET "in<0>" LOC = "P52";
+
+NET "SEG_COM<3>" LOC = "P18";
+NET "SEG_COM<2>" LOC = "P19";
+NET "SEG_COM<1>" LOC = "P20";
+NET "SEG_COM<0>" LOC = "P21";
+
+NET "SEG_DATA<7>" LOC = "P22";
+NET "SEG_DATA<6>" LOC = "P24";
+NET "SEG_DATA<5>" LOC = "P26";
+NET "SEG_DATA<4>" LOC = "P27";
+NET "SEG_DATA<3>" LOC = "P28";
+NET "SEG_DATA<2>" LOC = "P29";
+NET "SEG_DATA<1>" LOC = "P31";
+NET "SEG_DATA<0>" LOC = "P33";
+
+NET "SEG<6>" LOC = "P176";
+NET "SEG<5>" LOC = "P178";
+NET "SEG<4>" LOC = "P181";
+NET "SEG<3>" LOC = "P182";
+NET "SEG<2>" LOC = "P184";
+NET "SEG<1>" LOC = "P185";
+NET "SEG<0>" LOC = "P187";

@@ -1,0 +1,422 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.48 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.50 secs
+ 
+--> Reading design: SB_MULTIFLIER.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SB_MULTIFLIER.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SB_MULTIFLIER"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-pq208
+
+---- Source Options
+Top Module Name                    : SB_MULTIFLIER
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SB_MULTIFLIER.v" in library work
+Module <SB_MULTIFLIER> compiled
+No errors in compilation
+Analysis of file <"SB_MULTIFLIER.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <SB_MULTIFLIER> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <SB_MULTIFLIER>.
+Module <SB_MULTIFLIER> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <SB_MULTIFLIER>.
+    Related source file is "SB_MULTIFLIER.v".
+    Found 1-bit register for signal <overflow>.
+    Found 32-bit register for signal <result>.
+    Found 8-bit subtractor for signal <$sub0000> created at line 46.
+    Found 8-bit adder carry out for signal <AUX_1$addsub0001> created at line 40.
+    Found 6-bit comparator less for signal <result_22$cmp_lt0000> created at line 43.
+    Found 1-bit xor2 for signal <result_31$xor0000> created at line 41.
+    Found 46-bit register for signal <tmp>.
+    Found 6-bit comparator greatequal for signal <tmp$cmp_ge0000> created at line 43.
+    Found 6-bit comparator lessequal for signal <tmp$cmp_le0001> created at line 31.
+    Found 23x23-bit multiplier for signal <tmp$mult0000> created at line 37.
+    Found 46-bit 8-to-1 multiplexer for signal <tmp$mux0000>.
+    Summary:
+	inferred  79 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   3 Comparator(s).
+	inferred  46 Multiplexer(s).
+Unit <SB_MULTIFLIER> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 23x23-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 8-bit adder carry out                                 : 1
+ 8-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 34
+ 1-bit register                                        : 33
+ 46-bit register                                       : 1
+# Comparators                                          : 3
+ 6-bit comparator greatequal                           : 1
+ 6-bit comparator less                                 : 1
+ 6-bit comparator lessequal                            : 1
+# Multiplexers                                         : 1
+ 46-bit 8-to-1 multiplexer                             : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 23x23-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 8-bit adder carry out                                 : 1
+ 8-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 79
+ Flip-Flops                                            : 79
+# Comparators                                          : 3
+ 6-bit comparator greatequal                           : 1
+ 6-bit comparator less                                 : 1
+ 6-bit comparator lessequal                            : 1
+# Multiplexers                                         : 1
+ 46-bit 8-to-1 multiplexer                             : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SB_MULTIFLIER> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SB_MULTIFLIER, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 79
+ Flip-Flops                                            : 79
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : SB_MULTIFLIER.ngr
+Top Level Output File Name         : SB_MULTIFLIER
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 104
+
+Cell Usage :
+# BELS                             : 374
+#      GND                         : 1
+#      LUT1                        : 4
+#      LUT2                        : 59
+#      LUT2_D                      : 1
+#      LUT3                        : 56
+#      LUT3_D                      : 2
+#      LUT4                        : 72
+#      LUT4_D                      : 2
+#      LUT4_L                      : 4
+#      MUXCY                       : 59
+#      MUXF5                       : 53
+#      VCC                         : 1
+#      XORCY                       : 60
+# FlipFlops/Latches                : 79
+#      FDR                         : 47
+#      FDRE                        : 24
+#      FDRS                        : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 103
+#      IBUF                        : 70
+#      OBUF                        : 33
+# MULTs                            : 4
+#      MULT18X18                   : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200pq208-4 
+
+ Number of Slices:                      108  out of   1920     5%  
+ Number of Slice Flip Flops:             78  out of   3840     2%  
+ Number of 4 input LUTs:                200  out of   3840     5%  
+ Number of IOs:                         104
+ Number of bonded IOBs:                 104  out of    141    73%  
+    IOB Flip Flops:                       1
+ Number of MULT18X18s:                    4  out of     12    33%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 79    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.229ns (Maximum Frequency: 138.332MHz)
+   Minimum input arrival time before clock: 14.541ns
+   Maximum output required time after clock: 7.488ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.229ns (frequency: 138.332MHz)
+  Total number of paths / destination ports: 367 / 105
+-------------------------------------------------------------------------
+Delay:               7.229ns (Levels of Logic = 3)
+  Source:            tmp_45 (FF)
+  Destination:       result_28 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: tmp_45 to result_28
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             14   0.720   1.213  tmp_45 (tmp_45)
+     LUT4_D:I3->O          5   0.551   0.989  result_23_mux000011 (N12)
+     LUT4:I2->O            1   0.551   0.827  result_28_mux00008 (result_28_mux00008)
+     LUT4:I3->O            1   0.551   0.801  result_28_mux000028 (result_28_mux000028)
+     FDRS:S                    1.026          result_28
+    ----------------------------------------
+    Total                      7.229ns (3.399ns logic, 3.830ns route)
+                                       (47.0% logic, 53.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 283900 / 167
+-------------------------------------------------------------------------
+Offset:              14.541ns (Levels of Logic = 14)
+  Source:            a<16> (PAD)
+  Destination:       tmp_44 (FF)
+  Destination Clock: clk rising
+
+  Data Path: a<16> to tmp_44
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.821   0.877  a_16_IBUF (a_16_IBUF)
+     MULT18X18:A16->P21    1   4.143   1.140  Mmult_tmp_mult0000_submult_1 (Mmult_tmp_mult0000_submult_1_21)
+     LUT2:I0->O            1   0.551   0.000  Mmult_tmp_mult0000_Madd_lut<23> (Mmult_tmp_mult0000_Madd_lut<23>)
+     MUXCY:S->O            1   0.500   0.000  Mmult_tmp_mult0000_Madd_cy<23> (Mmult_tmp_mult0000_Madd_cy<23>)
+     XORCY:CI->O           1   0.904   1.140  Mmult_tmp_mult0000_Madd_xor<24> (Mmult_tmp_mult0000_Madd_39)
+     LUT2:I0->O            1   0.551   0.000  Mmult_tmp_mult0000_Madd1_lut<39> (Mmult_tmp_mult0000_Madd1_lut<39>)
+     MUXCY:S->O            1   0.500   0.000  Mmult_tmp_mult0000_Madd1_cy<39> (Mmult_tmp_mult0000_Madd1_cy<39>)
+     MUXCY:CI->O           1   0.064   0.000  Mmult_tmp_mult0000_Madd1_cy<40> (Mmult_tmp_mult0000_Madd1_cy<40>)
+     MUXCY:CI->O           1   0.064   0.000  Mmult_tmp_mult0000_Madd1_cy<41> (Mmult_tmp_mult0000_Madd1_cy<41>)
+     MUXCY:CI->O           1   0.064   0.000  Mmult_tmp_mult0000_Madd1_cy<42> (Mmult_tmp_mult0000_Madd1_cy<42>)
+     MUXCY:CI->O           1   0.064   0.000  Mmult_tmp_mult0000_Madd1_cy<43> (Mmult_tmp_mult0000_Madd1_cy<43>)
+     XORCY:CI->O           1   0.904   1.140  Mmult_tmp_mult0000_Madd1_xor<44> (tmp_mult0000<44>)
+     LUT3:I0->O            1   0.551   0.000  Mmux_tmp_mux0000_337 (Mmux_tmp_mux0000_337)
+     MUXF5:I1->O           1   0.360   0.000  Mmux_tmp_mux0000_2_f5_36 (tmp_mux0000<44>)
+     FDR:D                     0.203          tmp_44
+    ----------------------------------------
+    Total                     14.541ns (10.244ns logic, 4.297ns route)
+                                       (70.4% logic, 29.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 33 / 33
+-------------------------------------------------------------------------
+Offset:              7.488ns (Levels of Logic = 1)
+  Source:            result_27 (FF)
+  Destination:       result<27> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: result_27 to result<27>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRS:C->Q             9   0.720   1.124  result_27 (result_27)
+     OBUF:I->O                 5.644          result_27_OBUF (result<27>)
+    ----------------------------------------
+    Total                      7.488ns (6.364ns logic, 1.124ns route)
+                                       (85.0% logic, 15.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 33.00 secs
+Total CPU time to Xst completion: 33.05 secs
+ 
+--> 
+
+Total memory usage is 337392 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

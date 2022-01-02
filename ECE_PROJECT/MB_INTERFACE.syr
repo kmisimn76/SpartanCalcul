@@ -1,0 +1,1495 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.99 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.99 secs
+ 
+--> Reading design: MB_INTERFACE.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MB_INTERFACE.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MB_INTERFACE"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-pq208
+
+---- Source Options
+Top Module Name                    : MB_INTERFACE
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "sdp_bram.v" in library work
+Compiling verilog file "SB_PLMA_ARITHMETIC.v" in library work
+Module <sdp_bram> compiled
+Compiling verilog file "SB_MULTIFLIER.v" in library work
+Module <SB_PLMA_ARITHMETIC> compiled
+Compiling verilog file "SB_DIVIDER.v" in library work
+Module <SB_MULTIFLIER> compiled
+Compiling verilog file "MB_I2P_FIX_ARRANGER.v" in library work
+Module <SB_DIVIDER> compiled
+Compiling verilog file "SB_N2BCONV.v" in library work
+Module <MB_I2P_FIX_ARRANGER> compiled
+Compiling verilog file "SB_B2NCONV.v" in library work
+Module <SB_N2BCONV> compiled
+Compiling verilog file "MB_INSTRUCTOR.v" in library work
+Module <SB_B2NCONV> compiled
+Compiling verilog file "MB_INTERFACE.v" in library work
+Module <MB_INSTRUCTOR> compiled
+Module <MB_INTERFACE> compiled
+No errors in compilation
+Analysis of file <"MB_INTERFACE.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <MB_INTERFACE> in library <work> with parameters.
+	DELAY = "000"
+	DISP_ONOFF = "011"
+	DWIDTH = "00000000000000000000000000001001"
+	ENTRY_MODE = "010"
+	FUNCTION_SET = "001"
+	INF_DWIDTH = "00000000000000000000000000100100"
+	INF_LEN = "00000000000000000000001000000000"
+	INF_LOG_LEN = "00000000000000000000000000001001"
+	LEN = "00000000000000000000100000000000"
+	LINE1 = "100"
+	LINE2 = "101"
+	LOG_LEN = "00000000000000000000000000001011"
+	N0 = "000000000"
+	N1 = "000000001"
+	N2 = "000000010"
+	N3 = "000000011"
+	N4 = "000000100"
+	N5 = "000000101"
+	N6 = "000000110"
+	N7 = "000000111"
+	N8 = "000001000"
+	N9 = "000001001"
+	OBRKCLSE = "101010001"
+	OBRKOPEN = "101010000"
+	ODIV = "110010001"
+	ODOT = "000001111"
+	OMINUS = "101110001"
+	OMULTI = "110010000"
+	OPLUS = "101110000"
+	RESET_DELAY = "110"
+
+Analyzing hierarchy for module <sdp_bram> in library <work> with parameters.
+	DWIDTH = "00000000000000000000000000001001"
+	LEN = "00000000000000000000100000000000"
+	LOG_LEN = "00000000000000000000000000001011"
+
+Analyzing hierarchy for module <sdp_bram> in library <work> with parameters.
+	DWIDTH = "00000000000000000000000000100100"
+	LEN = "00000000000000000000001000000000"
+	LOG_LEN = "00000000000000000000000000001001"
+
+Analyzing hierarchy for module <MB_INSTRUCTOR> in library <work> with parameters.
+	DWIDTH_OPND = "00000000000000000000000000100100"
+	LEN_OPND = "00000000000000000000001000000000"
+	LOG_LEN_OPND = "00000000000000000000000000001001"
+
+Analyzing hierarchy for module <SB_B2NCONV> in library <work>.
+
+Analyzing hierarchy for module <SB_N2BCONV> in library <work>.
+
+Analyzing hierarchy for module <MB_I2P_FIX_ARRANGER> in library <work> with parameters.
+	DWIDTH_POSF = "00000000000000000000000000100100"
+	DWIDTH_TMP = "00000000000000000000000000100100"
+	LEN_POSF = "00000000000000000000001000000000"
+	LEN_TMP = "00000000000000000000001000000000"
+	LOG_LEN_POSF = "00000000000000000000000000001001"
+	LOG_LEN_TMP = "00000000000000000000000000001001"
+	PROCESS = "1"
+	WAITING = "0"
+
+Analyzing hierarchy for module <sdp_bram> in library <work> with parameters.
+	DWIDTH = "00000000000000000000000000100100"
+	LEN = "00000000000000000000001000000000"
+	LOG_LEN = "00000000000000000000000000001001"
+
+Analyzing hierarchy for module <SB_PLMA_ARITHMETIC> in library <work>.
+
+Analyzing hierarchy for module <SB_MULTIFLIER> in library <work>.
+
+Analyzing hierarchy for module <SB_DIVIDER> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <MB_INTERFACE>.
+	DELAY = 3'b000
+	DISP_ONOFF = 3'b011
+	DWIDTH = 32'sb00000000000000000000000000001001
+	ENTRY_MODE = 3'b010
+	FUNCTION_SET = 3'b001
+	INF_DWIDTH = 32'sb00000000000000000000000000100100
+	INF_LEN = 32'sb00000000000000000000001000000000
+	INF_LOG_LEN = 32'sb00000000000000000000000000001001
+	LEN = 32'sb00000000000000000000100000000000
+	LINE1 = 3'b100
+	LINE2 = 3'b101
+	LOG_LEN = 32'sb00000000000000000000000000001011
+	N0 = 9'b000000000
+	N1 = 9'b000000001
+	N2 = 9'b000000010
+	N3 = 9'b000000011
+	N4 = 9'b000000100
+	N5 = 9'b000000101
+	N6 = 9'b000000110
+	N7 = 9'b000000111
+	N8 = 9'b000001000
+	N9 = 9'b000001001
+	OBRKCLSE = 9'b101010001
+	OBRKOPEN = 9'b101010000
+	ODIV = 9'b110010001
+	ODOT = 9'b000001111
+	OMINUS = 9'b101110001
+	OMULTI = 9'b110010000
+	OPLUS = 9'b101110000
+	RESET_DELAY = 3'b110
+Module <MB_INTERFACE> is correct for synthesis.
+ 
+Analyzing module <sdp_bram.1> in library <work>.
+	DWIDTH = 32'sb00000000000000000000000000001001
+	LEN = 32'sb00000000000000000000100000000000
+	LOG_LEN = 32'sb00000000000000000000000000001011
+Module <sdp_bram.1> is correct for synthesis.
+ 
+    Set property "ram_style = block" for signal <ram>.
+Analyzing module <sdp_bram.2> in library <work>.
+	DWIDTH = 32'sb00000000000000000000000000100100
+	LEN = 32'sb00000000000000000000001000000000
+	LOG_LEN = 32'sb00000000000000000000000000001001
+Module <sdp_bram.2> is correct for synthesis.
+ 
+    Set property "ram_style = block" for signal <ram>.
+Analyzing module <MB_INSTRUCTOR> in library <work>.
+	DWIDTH_OPND = 32'sb00000000000000000000000000100100
+	LEN_OPND = 32'sb00000000000000000000001000000000
+	LOG_LEN_OPND = 32'sb00000000000000000000000000001001
+Module <MB_INSTRUCTOR> is correct for synthesis.
+ 
+Analyzing module <MB_I2P_FIX_ARRANGER> in library <work>.
+	DWIDTH_POSF = 32'sb00000000000000000000000000100100
+	DWIDTH_TMP = 32'sb00000000000000000000000000100100
+	LEN_POSF = 32'sb00000000000000000000001000000000
+	LEN_TMP = 32'sb00000000000000000000001000000000
+	LOG_LEN_POSF = 32'sb00000000000000000000000000001001
+	LOG_LEN_TMP = 32'sb00000000000000000000000000001001
+	PROCESS = 1'b1
+	WAITING = 1'b0
+Module <MB_I2P_FIX_ARRANGER> is correct for synthesis.
+ 
+Analyzing module <SB_PLMA_ARITHMETIC> in library <work>.
+Module <SB_PLMA_ARITHMETIC> is correct for synthesis.
+ 
+Analyzing module <SB_MULTIFLIER> in library <work>.
+Module <SB_MULTIFLIER> is correct for synthesis.
+ 
+Analyzing module <SB_DIVIDER> in library <work>.
+Module <SB_DIVIDER> is correct for synthesis.
+ 
+Analyzing module <SB_B2NCONV> in library <work>.
+Module <SB_B2NCONV> is correct for synthesis.
+ 
+Analyzing module <SB_N2BCONV> in library <work>.
+Module <SB_N2BCONV> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <dl_inf_a<35>> in unit <MB_INTERFACE> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dl_inf_a<34>> in unit <MB_INTERFACE> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dl_inf_a<33>> in unit <MB_INTERFACE> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <result<31>> in unit <SB_B2NCONV> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <sdp_bram_1>.
+    Related source file is "sdp_bram.v".
+    Found 2048x9-bit dual-port RAM <Mram_ram> for signal <ram>.
+    Found 9-bit register for signal <doa>.
+    Found 9-bit register for signal <dob>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  18 D-type flip-flop(s).
+Unit <sdp_bram_1> synthesized.
+
+
+Synthesizing Unit <sdp_bram_2>.
+    Related source file is "sdp_bram.v".
+    Found 512x36-bit dual-port RAM <Mram_ram> for signal <ram>.
+    Found 36-bit register for signal <doa>.
+    Found 36-bit register for signal <dob>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  72 D-type flip-flop(s).
+Unit <sdp_bram_2> synthesized.
+
+
+Synthesizing Unit <SB_B2NCONV>.
+    Related source file is "SB_B2NCONV.v".
+    Found 31-bit register for signal <result<30:0>>.
+    Found 1-bit register for signal <complete>.
+    Found 8-bit adder for signal <$add0000> created at line 60.
+    Found 4-bit adder for signal <$add0001> created at line 73.
+    Found 4-bit adder for signal <$add0002> created at line 74.
+    Found 4-bit adder for signal <$add0003> created at line 75.
+    Found 4-bit adder for signal <$add0004> created at line 76.
+    Found 4-bit adder for signal <$add0005> created at line 77.
+    Found 4-bit adder for signal <$add0006> created at line 78.
+    Found 4-bit adder for signal <$add0007> created at line 79.
+    Found 4-bit adder for signal <$add0008> created at line 80.
+    Found 8-bit adder for signal <$add0009> created at line 99.
+    Found 23-bit adder for signal <$add0010> created at line 100.
+    Found 23-bit adder for signal <$add0011> created at line 103.
+    Found 8-bit adder for signal <add0000$addsub0000> created at line 60.
+    Found 4-bit adder for signal <add0001$addsub0000> created at line 73.
+    Found 4-bit comparator greater for signal <add0001$cmp_gt0000> created at line 73.
+    Found 4-bit comparator greater for signal <add0001$cmp_gt0001> created at line 73.
+    Found 4-bit adder for signal <add0002$addsub0000> created at line 74.
+    Found 4-bit comparator greater for signal <add0002$cmp_gt0000> created at line 74.
+    Found 4-bit adder for signal <add0003$addsub0000> created at line 75.
+    Found 4-bit comparator greater for signal <add0003$cmp_gt0000> created at line 75.
+    Found 4-bit adder for signal <add0004$addsub0000> created at line 76.
+    Found 4-bit comparator greater for signal <add0004$cmp_gt0000> created at line 76.
+    Found 4-bit adder for signal <add0005$addsub0000> created at line 77.
+    Found 4-bit comparator greater for signal <add0005$cmp_gt0000> created at line 77.
+    Found 4-bit adder for signal <add0006$addsub0000> created at line 78.
+    Found 4-bit comparator greater for signal <add0006$cmp_gt0000> created at line 78.
+    Found 4-bit adder for signal <add0007$addsub0000> created at line 79.
+    Found 4-bit comparator greater for signal <add0007$cmp_gt0000> created at line 79.
+    Found 23-bit adder for signal <add0011$addsub0000> created at line 103.
+    Found 5-bit comparator greatequal for signal <complete$cmp_ge0000> created at line 54.
+    Found 1-bit 4-to-1 multiplexer for signal <complete$mux0000>.
+    Found 6-bit register for signal <exp_cnt>.
+    Found 6-bit adder for signal <exp_cnt$addsub0000> created at line 57.
+    Found 6-bit 4-to-1 multiplexer for signal <exp_cnt$mux0000>.
+    Found 1-bit register for signal <is_rat>.
+    Found 1-bit 4-to-1 multiplexer for signal <is_rat$mux0000>.
+    Found 5-bit register for signal <rat_cnt>.
+    Found 5-bit 4-to-1 multiplexer for signal <rat_cnt$mux0000>.
+    Found 5-bit adder for signal <rat_cnt$share0000>.
+    Found 32-bit register for signal <rat_tmp>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_0$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_1$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_10$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_11$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_12$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_13$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_14$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_15$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_16$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_17$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_18$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_19$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_2$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_20$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_21$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_22$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_23$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_24$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_25$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_26$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_27$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_28$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_29$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_3$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_30$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_31$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_4$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_5$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_6$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_7$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_8$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <rat_tmp_9$mux0000>.
+    Found 3-bit register for signal <rat_tmp_cnt>.
+    Found 3-bit adder for signal <rat_tmp_cnt$addsub0000> created at line 117.
+    Found 3-bit 4-to-1 multiplexer for signal <rat_tmp_cnt$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_0$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_1$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_10$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_11$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_12$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_13$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_14$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_15$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_16$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_17$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_18$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_19$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_2$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_20$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_21$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_22$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_23$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_24$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_25$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_26$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_27$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_28$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_29$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_3$mux0000>.
+    Found 26-bit adder for signal <result_30$add0000> created at line 94.
+    Found 26-bit comparator greatequal for signal <result_30$cmp_ge0000> created at line 94.
+    Found 1-bit 4-to-1 multiplexer for signal <result_30$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_4$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_5$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_6$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_7$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_8$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <result_9$mux0000>.
+    Found 23-bit register for signal <tmp>.
+    Found 22-bit adder for signal <tmp$add0000> created at line 96.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_0$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_1$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_10$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_11$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_12$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_13$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_14$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_15$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_16$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_17$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_18$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_19$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_2$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_20$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_21$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_22$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_3$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_4$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_5$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_6$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_7$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_8$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <tmp_9$mux0000>.
+    Summary:
+	inferred 102 D-type flip-flop(s).
+	inferred  26 Adder/Subtractor(s).
+	inferred  10 Comparator(s).
+	inferred 102 Multiplexer(s).
+Unit <SB_B2NCONV> synthesized.
+
+
+Synthesizing Unit <SB_N2BCONV>.
+    Related source file is "SB_N2BCONV.v".
+WARNING:Xst:647 - Input <data<31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <instate>.
+    Found 7-bit register for signal <exp>.
+    Found 28-bit register for signal <bcd>.
+    Found 4-bit adder for signal <$add0000> created at line 41.
+    Found 4-bit adder for signal <$add0001> created at line 42.
+    Found 4-bit adder for signal <$add0002> created at line 43.
+    Found 4-bit adder for signal <$add0003> created at line 44.
+    Found 4-bit adder for signal <$add0004> created at line 45.
+    Found 4-bit adder for signal <$add0005> created at line 46.
+    Found 4-bit adder for signal <$add0006> created at line 47.
+    Found 4-bit adder for signal <$add0007> created at line 101.
+    Found 10-bit adder for signal <$sub0000> created at line 52.
+    Found 10-bit subtractor for signal <$sub0001> created at line 79.
+    Found 4-bit adder for signal <add0000$addsub0000> created at line 41.
+    Found 4-bit comparator greater for signal <add0000$cmp_gt0000> created at line 41.
+    Found 4-bit adder for signal <add0001$addsub0000> created at line 42.
+    Found 4-bit comparator greater for signal <add0001$cmp_gt0000> created at line 42.
+    Found 4-bit adder for signal <add0002$addsub0000> created at line 43.
+    Found 4-bit comparator greater for signal <add0002$cmp_gt0000> created at line 43.
+    Found 4-bit adder for signal <add0003$addsub0000> created at line 44.
+    Found 4-bit comparator greater for signal <add0003$cmp_gt0000> created at line 44.
+    Found 4-bit adder for signal <add0004$addsub0000> created at line 45.
+    Found 4-bit comparator greater for signal <add0004$cmp_gt0000> created at line 45.
+    Found 4-bit adder for signal <add0005$addsub0000> created at line 46.
+    Found 4-bit comparator greater for signal <add0005$cmp_gt0000> created at line 46.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_0$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_1$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_10$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_11$mux0000>.
+    Found 5-bit adder for signal <bcd_11_8$add0000> created at line 62.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_12$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_13$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_14$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_15$mux0000>.
+    Found 5-bit adder for signal <bcd_15_12$add0000> created at line 61.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_16$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_17$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_18$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_19$mux0000>.
+    Found 5-bit adder for signal <bcd_19_16$add0000> created at line 60.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_2$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_20$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_21$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_22$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_23$mux0000>.
+    Found 5-bit adder for signal <bcd_23_20$add0000> created at line 59.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_24$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_25$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_26$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_27$mux0000>.
+    Found 5-bit adder for signal <bcd_27_24$add0000> created at line 58.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_3$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_4$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_5$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_6$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_7$mux0000>.
+    Found 5-bit adder for signal <bcd_7_4$add0000> created at line 63.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_8$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <bcd_9$mux0000>.
+    Found 8-bit register for signal <cnt>.
+    Found 8-bit 4-to-1 multiplexer for signal <cnt$mux0000> created at line 113.
+    Found 8-bit adder for signal <cnt$share0000> created at line 113.
+    Found 8-bit comparator lessequal for signal <exp$cmp_ge0000> created at line 51.
+    Found 10-bit comparator greatequal for signal <exp$cmp_ge0001> created at line 52.
+    Found 10-bit comparator greatequal for signal <exp$cmp_ge0002> created at line 79.
+    Found 4-bit comparator greater for signal <exp$cmp_gt0000> created at line 84.
+    Found 7-bit addsub for signal <exp$share0000>.
+    Found 8-bit comparator greatequal for signal <instate$cmp_ge0000> created at line 39.
+    Found 2-bit 4-to-1 multiplexer for signal <instate$mux0000>.
+    Summary:
+	inferred  45 D-type flip-flop(s).
+	inferred  24 Adder/Subtractor(s).
+	inferred  11 Comparator(s).
+	inferred  39 Multiplexer(s).
+Unit <SB_N2BCONV> synthesized.
+
+
+Synthesizing Unit <SB_PLMA_ARITHMETIC>.
+    Related source file is "SB_PLMA_ARITHMETIC.v".
+    Found 32-bit register for signal <result>.
+    Found 1-bit register for signal <overflow>.
+    Found 24-bit adder for signal <$add0000> created at line 53.
+    Found 47-bit adder for signal <$add0001> created at line 56.
+    Found 47-bit adder for signal <$add0002> created at line 60.
+    Found 8-bit adder for signal <$add0003> created at line 65.
+    Found 8-bit subtractor for signal <$sub0000> created at line 47.
+    Found 9-bit subtractor for signal <$sub0001> created at line 47.
+    Found 8-bit subtractor for signal <$sub0002> created at line 88.
+    Found 24-bit register for signal <a_tmp>.
+    Found 6-bit comparator lessequal for signal <a_tmp_23$cmp_le0000> created at line 33.
+    Found 47-bit register for signal <b_tmp>.
+    Found 9-bit comparator lessequal for signal <b_tmp_22$cmp_le0000> created at line 47.
+    Found 6-bit comparator greatequal for signal <b_tmp_45$cmp_ge0000> created at line 85.
+    Found 9-bit comparator greater for signal <b_tmp_45$cmp_gt0000> created at line 47.
+    Found 1-bit xor2 for signal <b_tmp_45$xor0000> created at line 63.
+    Found 6-bit comparator greatequal for signal <b_tmp_46$cmp_ge0000> created at line 46.
+    Found 23-bit comparator greatequal for signal <b_tmp_46$cmp_ge0001> created at line 75.
+    Found 6-bit comparator lessequal for signal <b_tmp_46$cmp_le0000> created at line 46.
+    Found 23-bit comparator lessequal for signal <b_tmp_46$cmp_le0001> created at line 79.
+    Found 6-bit comparator less for signal <result_22$cmp_lt0000> created at line 85.
+    Found 1-bit register for signal <same_exp>.
+    Found 8-bit comparator equal for signal <same_exp$cmp_eq0001> created at line 44.
+    Summary:
+	inferred 105 D-type flip-flop(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred  10 Comparator(s).
+Unit <SB_PLMA_ARITHMETIC> synthesized.
+
+
+Synthesizing Unit <SB_MULTIFLIER>.
+    Related source file is "SB_MULTIFLIER.v".
+    Found 32-bit register for signal <result>.
+    Found 1-bit register for signal <overflow>.
+    Found 8-bit subtractor for signal <$sub0000> created at line 46.
+    Found 8-bit adder carry out for signal <AUX_3$addsub0001> created at line 40.
+    Found 6-bit comparator less for signal <result_22$cmp_lt0000> created at line 43.
+    Found 1-bit xor2 for signal <result_31$xor0000> created at line 41.
+    Found 46-bit register for signal <tmp>.
+    Found 6-bit comparator greatequal for signal <tmp$cmp_ge0000> created at line 43.
+    Found 6-bit comparator lessequal for signal <tmp$cmp_le0001> created at line 31.
+    Found 23x23-bit multiplier for signal <tmp$mult0000> created at line 37.
+    Found 46-bit 8-to-1 multiplexer for signal <tmp$mux0000>.
+    Summary:
+	inferred  79 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   3 Comparator(s).
+	inferred  46 Multiplexer(s).
+Unit <SB_MULTIFLIER> synthesized.
+
+
+Synthesizing Unit <SB_DIVIDER>.
+    Related source file is "SB_DIVIDER.v".
+    Found 32-bit register for signal <result>.
+    Found 1-bit register for signal <overflow>.
+    Found 1-bit register for signal <dv_by_zero>.
+    Found 9-bit adder for signal <AUX_7$addsub0000> created at line 55.
+    Found 47-bit register for signal <b_tmp>.
+    Found 10-bit subtractor for signal <overflow$sub0000> created at line 55.
+    Found 47-bit comparator greatequal for signal <result_28$cmp_ge0000> created at line 44.
+    Found 6-bit comparator greatequal for signal <result_28$cmp_ge0001> created at line 43.
+    Found 6-bit comparator lessequal for signal <result_28$cmp_le0000> created at line 43.
+    Found 1-bit xor2 for signal <result_31$xor0000> created at line 56.
+    Found 47-bit register for signal <tmp>.
+    Found 47-bit subtractor for signal <tmp$addsub0000> created at line 45.
+    Found 6-bit comparator greater for signal <tmp$cmp_gt0000> created at line 43.
+    Found 6-bit comparator lessequal for signal <tmp$cmp_le0000> created at line 33.
+    Found 47-bit comparator less for signal <tmp$cmp_lt0000> created at line 44.
+    Found 6-bit comparator less for signal <tmp$cmp_lt0001> created at line 43.
+    Summary:
+	inferred 128 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   7 Comparator(s).
+Unit <SB_DIVIDER> synthesized.
+
+
+Synthesizing Unit <MB_I2P_FIX_ARRANGER>.
+    Related source file is "MB_I2P_FIX_ARRANGER.v".
+WARNING:Xst:646 - Signal <do_tmp_a> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <do_posf_a> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <en_posf_a> equivalent to <en_inf> has been removed
+    Register <en_tmp_a> equivalent to <en_inf> has been removed
+    Register <en_tmp_b> equivalent to <en_inf> has been removed
+    Register <we_posf_a> equivalent to <en_inf> has been removed
+    Found 9-bit register for signal <top_addr_posf_a>.
+    Found 1-bit register for signal <en_inf>.
+    Found 1-bit register for signal <finish>.
+    Found 9-bit up counter for signal <addr_inf>.
+    Found 3-bit comparator lessequal for signal <addr_inf$cmp_le0000> created at line 110.
+    Found 9-bit adder for signal <addr_inf$mux0000>.
+    Found 9-bit up counter for signal <addr_posf_a>.
+    Found 9-bit adder for signal <addr_posf_a$add0000> created at line 96.
+    Found 9-bit comparator greater for signal <addr_posf_a$cmp_gt0000> created at line 89.
+    Found 3-bit comparator greater for signal <addr_posf_a$cmp_gt0001> created at line 110.
+    Found 9-bit register for signal <addr_tmp_a>.
+    Found 9-bit addsub for signal <addr_tmp_a$share0000>.
+    Found 36-bit register for signal <dl_posf_a>.
+    Found 36-bit 4-to-1 multiplexer for signal <dl_posf_a$mux0000>.
+    Found 36-bit register for signal <dl_tmp_a>.
+    Found 9-bit comparator lessequal for signal <finish$cmp_le0000> created at line 89.
+    Found 1-bit register for signal <state>.
+    Found 1-bit register for signal <we_tmp_a>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  94 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+	inferred  36 Multiplexer(s).
+Unit <MB_I2P_FIX_ARRANGER> synthesized.
+
+
+Synthesizing Unit <MB_INSTRUCTOR>.
+    Related source file is "MB_INSTRUCTOR.v".
+WARNING:Xst:646 - Signal <do_tmp_b<35:32>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <do_tmp_a> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <en_tmp_b> equivalent to <en_tmp_a> has been removed
+    Found 1-bit register for signal <finish>.
+    Found 32-bit register for signal <result>.
+    Found 1-bit register for signal <syntax_error>.
+    Found 32-bit register for signal <a>.
+    Found 9-bit comparator greater for signal <a$cmp_gt0000> created at line 109.
+    Found 8-bit comparator less for signal <a$cmp_lt0000> created at line 142.
+    Found 9-bit register for signal <addr_posf>.
+    Found 9-bit adder for signal <addr_posf$share0000>.
+    Found 9-bit register for signal <addr_tmp_a>.
+    Found 9-bit addsub for signal <addr_tmp_a$mux0000>.
+    Found 32-bit register for signal <b>.
+    Found 6-bit register for signal <cnt>.
+    Found 6-bit adder for signal <cnt$addsub0000> created at line 158.
+    Found 6-bit comparator greatequal for signal <cnt$cmp_ge0000> created at line 157.
+    Found 9-bit comparator lessequal for signal <cnt$cmp_le0001> created at line 109.
+    Found 6-bit comparator lessequal for signal <cnt$cmp_le0002> created at line 157.
+    Found 36-bit register for signal <dl_tmp_a>.
+    Found 36-bit 4-to-1 multiplexer for signal <dl_tmp_a$mux0000>.
+    Found 1-bit register for signal <en_tmp_a>.
+    Found 1-bit register for signal <state>.
+    Found 1-bit register for signal <we_tmp_a>.
+    Summary:
+	inferred 161 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   5 Comparator(s).
+	inferred  36 Multiplexer(s).
+Unit <MB_INSTRUCTOR> synthesized.
+
+
+Synthesizing Unit <MB_INTERFACE>.
+    Related source file is "MB_INTERFACE.v".
+WARNING:Xst:646 - Signal <syntax_error> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <overflow> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dv_by_zero> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <do_inf_a> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <we_inf_a> equivalent to <en_inf_a> has been removed
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <b2ncvstate> of Case statement line 269 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <b2ncvstate> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:1799 - State 001 is never reached in FSM <state>.
+INFO:Xst:1799 - State 000 is never reached in FSM <state>.
+INFO:Xst:1799 - State 011 is never reached in FSM <state>.
+INFO:Xst:1799 - State 010 is never reached in FSM <state>.
+    Found finite state machine <FSM_0> for signal <b2ncvstate>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 21                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 10                                             |
+    | Clock              | CLK_1MHz                  (rising_edge)        |
+    | Reset              | RSTN                      (negative)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLK_1kHz                  (rising_edge)        |
+    | Reset              | RSTN                      (negative)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 110                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 28-bit register for signal <BCD_result_store>.
+    Found 8-bit register for signal <LCD_DATA>.
+    Found 1-bit register for signal <LCD_RS>.
+    Found 1-bit register for signal <LCD_RW>.
+    Found 1-bit register for signal <en_exp_cvstate>.
+    Found 8-bit register for signal <exp_result_BCD>.
+    Found 1-bit register for signal <result_complete>.
+    Found 4-bit adder for signal <$add0000> created at line 326.
+    Found 4-bit adder for signal <$add0001> created at line 327.
+    Found 4-bit comparator greater for signal <add0000$cmp_gt0000> created at line 326.
+    Found 4-bit adder for signal <add0001$addsub0000> created at line 327.
+    Found 11-bit adder carry out for signal <add0002$addsub0000> created at line 450.
+    Found 9-bit register for signal <addr_inf_a>.
+    Found 9-bit adder for signal <addr_inf_a$share0000>.
+    Found 11-bit register for signal <addra>.
+    Found 11-bit adder for signal <addra$addsub0000>.
+    Found 11-bit register for signal <addrb>.
+    Found 10-bit comparator greater for signal <addrb$cmp_gt0000> created at line 428.
+    Found 11-bit comparator greater for signal <addrb$cmp_gt0001> created at line 428.
+    Found 11-bit comparator less for signal <addrb$cmp_lt0000> created at line 425.
+    Found 11-bit addsub for signal <addrb$share0000>.
+    Found 11-bit comparator greatequal for signal <b2ncvstate$cmp_ge0000> created at line 172.
+    Found 5-bit comparator less for signal <b2ncvstate$cmp_lt0000> created at line 176.
+    Found 5-bit comparator less for signal <b2ncvstate$cmp_lt0001> created at line 182.
+    Found 10-bit register for signal <CNT>.
+    Found 10-bit adder for signal <CNT$share0000> created at line 375.
+    Found 9-bit register for signal <conv_proc_tmp>.
+    Found 2-bit register for signal <conv_state>.
+    Found 33-bit register for signal <dl_inf_a<32:0>>.
+    Found 9-bit register for signal <dla>.
+    Found 1-bit register for signal <en_inf_a>.
+    Found 1-bit register for signal <ena>.
+    Found 1-bit register for signal <enb>.
+    Found 4-bit up counter for signal <exp_cv_cnt>.
+    Found 7-bit subtractor for signal <exp_result_tmp$addsub0000> created at line 291.
+    Found 7-bit adder for signal <exp_result_tmp$addsub0001> created at line 291.
+    Found 7-bit comparator greatequal for signal <exp_result_tmp$cmp_ge0000> created at line 291.
+    Found 12-bit comparator equal for signal <LCD_DATA$cmp_eq0015> created at line 450.
+    Found 11-bit comparator greatequal for signal <LCD_DATA$cmp_ge0000> created at line 450.
+    Found 10-bit comparator lessequal for signal <LCD_DATA$cmp_le0000> created at line 428.
+    Found 11-bit comparator lessequal for signal <LCD_DATA$cmp_le0001> created at line 428.
+    Found 10-bit comparator less for signal <LCD_DATA$cmp_lt0000> created at line 450.
+    Found 16-bit register for signal <Q_IN>.
+    Found 1-bit register for signal <q_n2bfinish>.
+    Found 16-bit register for signal <R_IN>.
+    Found 1-bit register for signal <r_n2bfinish>.
+    Found 1-bit register for signal <sig_start_cal>.
+    Found 10-bit comparator greatequal for signal <state$cmp_ge0000> created at line 358.
+    Found 10-bit comparator greatequal for signal <state$cmp_ge0001> created at line 359.
+    Found 10-bit comparator greatequal for signal <state$cmp_ge0002> created at line 362.
+    Found 10-bit comparator greatequal for signal <state$cmp_ge0003> created at line 364.
+    Found 9-bit register for signal <top_addr_inf_a>.
+    Found 11-bit register for signal <top_addra>.
+    Found 11-bit addsub for signal <top_addra$share0000> created at line 233.
+    Found 1-bit register for signal <wea>.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred 201 D-type flip-flop(s).
+	inferred  11 Adder/Subtractor(s).
+	inferred  17 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <MB_INTERFACE> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 2048x9-bit dual-port RAM                              : 1
+ 512x36-bit dual-port RAM                              : 4
+# Multipliers                                          : 1
+ 23x23-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 81
+ 10-bit adder                                          : 2
+ 10-bit subtractor                                     : 2
+ 11-bit adder                                          : 1
+ 11-bit adder carry out                                : 1
+ 11-bit addsub                                         : 2
+ 22-bit adder                                          : 1
+ 23-bit adder                                          : 3
+ 24-bit adder                                          : 1
+ 26-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 32
+ 47-bit adder                                          : 2
+ 47-bit subtractor                                     : 1
+ 5-bit adder                                           : 7
+ 6-bit adder                                           : 2
+ 7-bit adder                                           : 1
+ 7-bit addsub                                          : 1
+ 7-bit subtractor                                      : 1
+ 8-bit adder                                           : 5
+ 8-bit adder carry out                                 : 1
+ 8-bit subtractor                                      : 3
+ 9-bit adder                                           : 6
+ 9-bit addsub                                          : 2
+ 9-bit subtractor                                      : 2
+# Counters                                             : 3
+ 4-bit up counter                                      : 1
+ 9-bit up counter                                      : 2
+# Registers                                            : 423
+ 1-bit register                                        : 381
+ 10-bit register                                       : 1
+ 11-bit register                                       : 3
+ 16-bit register                                       : 2
+ 2-bit register                                        : 2
+ 28-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 2
+ 36-bit register                                       : 11
+ 46-bit register                                       : 1
+ 47-bit register                                       : 2
+ 5-bit register                                        : 1
+ 6-bit register                                        : 2
+ 7-bit register                                        : 1
+ 8-bit register                                        : 2
+ 9-bit register                                        : 10
+# Comparators                                          : 67
+ 10-bit comparator greatequal                          : 6
+ 10-bit comparator greater                             : 1
+ 10-bit comparator less                                : 1
+ 10-bit comparator lessequal                           : 1
+ 11-bit comparator greatequal                          : 2
+ 11-bit comparator greater                             : 1
+ 11-bit comparator less                                : 1
+ 11-bit comparator lessequal                           : 1
+ 12-bit comparator equal                               : 1
+ 23-bit comparator greatequal                          : 1
+ 23-bit comparator lessequal                           : 1
+ 26-bit comparator greatequal                          : 1
+ 3-bit comparator greater                              : 1
+ 3-bit comparator lessequal                            : 1
+ 4-bit comparator greater                              : 16
+ 47-bit comparator greatequal                          : 1
+ 47-bit comparator less                                : 1
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator less                                 : 2
+ 6-bit comparator greatequal                           : 5
+ 6-bit comparator greater                              : 1
+ 6-bit comparator less                                 : 3
+ 6-bit comparator lessequal                            : 6
+ 7-bit comparator greatequal                           : 1
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greatequal                           : 1
+ 8-bit comparator less                                 : 1
+ 8-bit comparator lessequal                            : 1
+ 9-bit comparator greater                              : 3
+ 9-bit comparator lessequal                            : 3
+# Multiplexers                                         : 126
+ 1-bit 23-to-1 multiplexer                             : 1
+ 1-bit 4-to-1 multiplexer                              : 116
+ 1-bit 7-to-1 multiplexer                              : 1
+ 2-bit 4-to-1 multiplexer                              : 1
+ 3-bit 4-to-1 multiplexer                              : 1
+ 36-bit 4-to-1 multiplexer                             : 2
+ 46-bit 8-to-1 multiplexer                             : 1
+ 5-bit 4-to-1 multiplexer                              : 1
+ 6-bit 4-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <state/FSM> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | unreached
+ 001   | unreached
+ 010   | unreached
+ 011   | unreached
+ 100   | 01
+ 101   | 11
+ 110   | 00
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <b2ncvstate/FSM> on signal <b2ncvstate[1:8]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00000001
+ 001   | 00000100
+ 010   | 00000010
+ 011   | 01000000
+ 100   | 10000000
+ 101   | 00010000
+ 110   | 00001000
+ 111   | 00100000
+-------------------
+WARNING:Xst:1710 - FF/Latch <dl_inf_a_31> (without init value) has a constant value of 0 in block <MB_INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <dob_32> of sequential type is unconnected in block <OPND_TEMP_bram>.
+WARNING:Xst:2677 - Node <dob_33> of sequential type is unconnected in block <OPND_TEMP_bram>.
+WARNING:Xst:2677 - Node <dob_34> of sequential type is unconnected in block <OPND_TEMP_bram>.
+WARNING:Xst:2677 - Node <dob_35> of sequential type is unconnected in block <OPND_TEMP_bram>.
+
+Synthesizing (advanced) Unit <MB_INSTRUCTOR>.
+INFO:Xst:3226 - The RAM <OPND_TEMP_bram/Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <OPND_TEMP_bram/dob>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 36-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK_1MHz>      | fall     |
+    |     weA            | connected to signal <OPND_TEMP_bram/wea_0> | high     |
+    |     addrA          | connected to signal <addr_tmp_a>    |          |
+    |     diA            | connected to signal <dl_tmp_a>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 512-word x 36-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK_1MHz>      | fall     |
+    |     enB            | connected to signal <en_tmp_a>      | high     |
+    |     addrB          | connected to signal <addr_tmp_a>    |          |
+    |     doB            | connected to signal <do_tmp_b>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <arranger/POSFFIX_bram/Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <arranger/POSFFIX_bram/dob>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 36-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK_1MHz>      | fall     |
+    |     weA            | connected to signal <arranger/POSFFIX_bram/wea_0> | high     |
+    |     addrA          | connected to signal <arranger/addr_posf_a> |          |
+    |     diA            | connected to signal <arranger/dl_posf_a> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 512-word x 36-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK_1MHz>      | fall     |
+    |     enB            | connected to internal node          | high     |
+    |     addrB          | connected to signal <addr_posf>     |          |
+    |     doB            | connected to signal <do_posf>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <arranger/ITP_TEMP_bram/Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <arranger/ITP_TEMP_bram/dob>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 36-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK_1MHz>      | fall     |
+    |     weA            | connected to signal <arranger/ITP_TEMP_bram/wea_0> | high     |
+    |     addrA          | connected to signal <arranger/addr_tmp_a> |          |
+    |     diA            | connected to signal <arranger/dl_tmp_a> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 512-word x 36-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK_1MHz>      | fall     |
+    |     enB            | connected to signal <arranger/POSFFIX_bram/wea_0> | high     |
+    |     addrB          | connected to signal <arranger/addr_tmp_a> |          |
+    |     doB            | connected to signal <arranger/do_tmp_b> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <MB_INSTRUCTOR> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MB_INTERFACE>.
+INFO:Xst:3226 - The RAM <IO_process_bram/Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <IO_process_bram/doa> <IO_process_bram/dob>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 9-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK_1MHz>      | fall     |
+    |     enA            | connected to signal <ena>           | high     |
+    |     weA            | connected to signal <wea>           | high     |
+    |     addrA          | connected to signal <addra>         |          |
+    |     diA            | connected to signal <dla>           |          |
+    |     doA            | connected to signal <doa>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 9-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK_1MHz>      | fall     |
+    |     enB            | connected to signal <enb>           | high     |
+    |     addrB          | connected to signal <addrb>         |          |
+    |     doB            | connected to signal <dob>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <INFIX_bram/Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <INFIX_bram/dob>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 36-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK_1MHz>      | fall     |
+    |     weA            | connected to signal <INFIX_bram/wea_0> | high     |
+    |     addrA          | connected to signal <addr_inf_a>    |          |
+    |     diA            | connected to signal <dl_inf_a>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 512-word x 36-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK_1MHz>      | fall     |
+    |     enB            | connected to signal <en_inf_b>      | high     |
+    |     addrB          | connected to signal <addr_inf_b>    |          |
+    |     doB            | connected to signal <do_inf_b>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <MB_INTERFACE> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 2048x9-bit dual-port block RAM                        : 1
+ 512x36-bit dual-port block RAM                        : 4
+# Multipliers                                          : 1
+ 23x23-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 81
+ 10-bit adder                                          : 2
+ 10-bit subtractor                                     : 1
+ 11-bit adder                                          : 1
+ 11-bit adder carry out                                : 1
+ 11-bit addsub                                         : 2
+ 22-bit adder                                          : 1
+ 23-bit adder                                          : 3
+ 24-bit adder                                          : 1
+ 26-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 32
+ 47-bit adder                                          : 2
+ 47-bit subtractor                                     : 1
+ 5-bit adder                                           : 7
+ 6-bit adder                                           : 2
+ 7-bit adder                                           : 1
+ 7-bit addsub                                          : 1
+ 7-bit subtractor                                      : 1
+ 8-bit adder                                           : 5
+ 8-bit adder carry out                                 : 1
+ 8-bit subtractor                                      : 3
+ 9-bit adder                                           : 6
+ 9-bit addsub                                          : 2
+ 9-bit subtractor                                      : 3
+# Counters                                             : 3
+ 4-bit up counter                                      : 1
+ 9-bit up counter                                      : 2
+# Registers                                            : 925
+ Flip-Flops                                            : 925
+# Comparators                                          : 67
+ 10-bit comparator greatequal                          : 6
+ 10-bit comparator greater                             : 1
+ 10-bit comparator less                                : 1
+ 10-bit comparator lessequal                           : 1
+ 11-bit comparator greatequal                          : 2
+ 11-bit comparator greater                             : 1
+ 11-bit comparator less                                : 1
+ 11-bit comparator lessequal                           : 1
+ 12-bit comparator equal                               : 1
+ 23-bit comparator greatequal                          : 1
+ 23-bit comparator lessequal                           : 1
+ 26-bit comparator greatequal                          : 1
+ 3-bit comparator greater                              : 1
+ 3-bit comparator lessequal                            : 1
+ 4-bit comparator greater                              : 16
+ 47-bit comparator greatequal                          : 1
+ 47-bit comparator less                                : 1
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator less                                 : 2
+ 6-bit comparator greatequal                           : 5
+ 6-bit comparator greater                              : 1
+ 6-bit comparator less                                 : 3
+ 6-bit comparator lessequal                            : 6
+ 7-bit comparator greatequal                           : 1
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greatequal                           : 1
+ 8-bit comparator less                                 : 1
+ 8-bit comparator lessequal                            : 1
+ 9-bit comparator greater                              : 3
+ 9-bit comparator lessequal                            : 3
+# Multiplexers                                         : 126
+ 1-bit 23-to-1 multiplexer                             : 1
+ 1-bit 4-to-1 multiplexer                              : 116
+ 1-bit 7-to-1 multiplexer                              : 1
+ 2-bit 4-to-1 multiplexer                              : 1
+ 3-bit 4-to-1 multiplexer                              : 1
+ 36-bit 4-to-1 multiplexer                             : 2
+ 46-bit 8-to-1 multiplexer                             : 1
+ 5-bit 4-to-1 multiplexer                              : 1
+ 6-bit 4-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <MB_INTERFACE> ...
+WARNING:Xst:1710 - FF/Latch <CNT_7> (without init value) has a constant value of 0 in block <MB_INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CNT_8> (without init value) has a constant value of 0 in block <MB_INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CNT_9> (without init value) has a constant value of 0 in block <MB_INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CNT_7> (without init value) has a constant value of 0 in block <MB_INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CNT_8> (without init value) has a constant value of 0 in block <MB_INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CNT_9> (without init value) has a constant value of 0 in block <MB_INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <SB_B2NCONV> ...
+
+Optimizing unit <SB_N2BCONV> ...
+
+Optimizing unit <MB_INSTRUCTOR> ...
+WARNING:Xst:1710 - FF/Latch <dl_tmp_a_32> (without init value) has a constant value of 0 in block <MB_INSTRUCTOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:638 - in unit MB_INSTRUCTOR Conflict on KEEP property on signal N0 and dl_tmp_a<32> dl_tmp_a<32> signal will be lost.
+WARNING:Xst:1710 - FF/Latch <dl_tmp_a_32> (without init value) has a constant value of 0 in block <MB_INSTRUCTOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:638 - in unit MB_INSTRUCTOR Conflict on KEEP property on signal N0 and dl_tmp_a<32> dl_tmp_a<32> signal will be lost.
+WARNING:Xst:1710 - FF/Latch <dl_tmp_a_32> (without init value) has a constant value of 0 in block <MB_INSTRUCTOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:638 - in unit MB_INSTRUCTOR Conflict on KEEP property on signal N0 and dl_tmp_a<32> dl_tmp_a<32> signal will be lost.
+WARNING:Xst:1710 - FF/Latch <dl_tmp_a_32> (without init value) has a constant value of 0 in block <MB_INSTRUCTOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:638 - in unit MB_INSTRUCTOR Conflict on KEEP property on signal N0 and dl_tmp_a<32> dl_tmp_a<32> signal will be lost.
+WARNING:Xst:1303 - From in and out of unit instructor, both signals arranger/POSFFIX_bram/wea_0 and en_inf_b have a KEEP attribute, signal arranger/POSFFIX_bram/wea_0 will be lost.
+WARNING:Xst:1710 - FF/Latch <dl_inf_a_31> (without init value) has a constant value of 0 in block <MB_INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <instructor/syntax_error> of sequential type is unconnected in block <MB_INTERFACE>.
+WARNING:Xst:638 - in unit MB_INTERFACE Conflict on KEEP property on signal N0 and dl_inf_a<31> dl_inf_a<31> signal will be lost.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MB_INTERFACE, actual ratio is 89.
+FlipFlop instructor/cnt_0 has been replicated 1 time(s)
+FlipFlop instructor/cnt_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 946
+ Flip-Flops                                            : 946
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MB_INTERFACE.ngr
+Top Level Output File Name         : MB_INTERFACE
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 112
+
+Cell Usage :
+# BELS                             : 4042
+#      GND                         : 6
+#      INV                         : 93
+#      LUT1                        : 22
+#      LUT2                        : 491
+#      LUT2_D                      : 24
+#      LUT2_L                      : 3
+#      LUT3                        : 487
+#      LUT3_D                      : 29
+#      LUT3_L                      : 44
+#      LUT4                        : 1426
+#      LUT4_D                      : 72
+#      LUT4_L                      : 251
+#      MULT_AND                    : 21
+#      MUXCY                       : 517
+#      MUXF5                       : 227
+#      MUXF6                       : 4
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 323
+# FlipFlops/Latches                : 946
+#      FD                          : 48
+#      FDE                         : 203
+#      FDR                         : 74
+#      FDRE                        : 493
+#      FDRS                        : 29
+#      FDRSE                       : 3
+#      FDS                         : 96
+# RAMS                             : 5
+#      RAMB16                      : 5
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 111
+#      IBUF                        : 19
+#      OBUF                        : 92
+# MULTs                            : 4
+#      MULT18X18                   : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200pq208-4 
+
+ Number of Slices:                     1548  out of   1920    80%  
+ Number of Slice Flip Flops:            946  out of   3840    24%  
+ Number of 4 input LUTs:               2942  out of   3840    76%  
+ Number of IOs:                         112
+ Number of bonded IOBs:                 112  out of    141    79%  
+ Number of BRAMs:                         5  out of     12    41%  
+ Number of MULT18X18s:                    4  out of     12    33%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK_1MHz                           | BUFGP                  | 917   |
+CLK_1kHz                           | IBUF+BUFG              | 34    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 14.812ns (Maximum Frequency: 67.513MHz)
+   Minimum input arrival time before clock: 10.185ns
+   Maximum output required time after clock: 8.229ns
+   Maximum combinational path delay: 7.372ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_1MHz'
+  Clock period: 14.812ns (frequency: 67.513MHz)
+  Total number of paths / destination ports: 431231 / 2205
+-------------------------------------------------------------------------
+Delay:               14.812ns (Levels of Logic = 10)
+  Source:            R_IN_14 (FF)
+  Destination:       top_addra_9 (FF)
+  Source Clock:      CLK_1MHz rising
+  Destination Clock: CLK_1MHz rising
+
+  Data Path: R_IN_14 to top_addra_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.720   1.260  R_IN_14 (R_IN_14)
+     LUT2_D:I0->O         10   0.551   1.160  ENABLE_IN<13>1 (ENABLE_IN<13>)
+     LUT4:I3->O            1   0.551   0.827  b2ncvstate_cmp_eq000011_SW0 (N494)
+     LUT4_D:I3->O         11   0.551   1.170  top_addra_cmp_eq000211 (N58)
+     LUT4:I3->O            2   0.551   0.903  top_addra_mux000160_SW0_SW0 (N546)
+     LUT4_D:I3->O          3   0.551   1.246  top_addra_mux000198_1 (top_addra_mux0001981)
+     LUT4:I0->O            1   0.551   0.000  Maddsub_top_addra_share0000_cy<5>11_F (N1156)
+     MUXF5:I0->O           3   0.360   0.975  Maddsub_top_addra_share0000_cy<5>11 (Maddsub_top_addra_share0000_cy<5>)
+     LUT3_D:I2->O          2   0.551   0.903  Maddsub_top_addra_share0000_cy<7>11 (Maddsub_top_addra_share0000_cy<7>)
+     LUT4_L:I3->LO         1   0.551   0.126  top_addra_mux0000<9>_SW1 (N742)
+     LUT4:I3->O            1   0.551   0.000  top_addra_mux0000<9> (top_addra_mux0000<9>)
+     FDRE:D                    0.203          top_addra_9
+    ----------------------------------------
+    Total                     14.812ns (6.242ns logic, 8.570ns route)
+                                       (42.1% logic, 57.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_1kHz'
+  Clock period: 13.036ns (frequency: 76.711MHz)
+  Total number of paths / destination ports: 4554 / 56
+-------------------------------------------------------------------------
+Delay:               13.036ns (Levels of Logic = 8)
+  Source:            addrb_3 (FF)
+  Destination:       LCD_DATA_0 (FF)
+  Source Clock:      CLK_1kHz rising
+  Destination Clock: CLK_1kHz rising
+
+  Data Path: addrb_3 to LCD_DATA_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.720   1.256  addrb_3 (Madd_add0002_addsub0000_lut<3>)
+     LUT4:I0->O            4   0.551   0.943  Mcompar_LCD_DATA_cmp_ge0000_lut<0> (Madd_add0002_addsub0000_cy<3>)
+     LUT4_D:I3->O          3   0.551   0.933  Madd_add0002_addsub0000_cy<6>11 (Madd_add0002_addsub0000_cy<6>)
+     LUT4:I3->O            1   0.551   0.996  Madd_add0002_addsub0000_cy<9>11 (Madd_add0002_addsub0000_cy<9>)
+     LUT2:I1->O            1   0.551   0.000  Mcompar_LCD_DATA_cmp_eq0015_lut<5> (Mcompar_LCD_DATA_cmp_eq0015_lut<5>)
+     MUXCY:S->O            2   0.739   0.903  Mcompar_LCD_DATA_cmp_eq0015_cy<5> (Mcompar_LCD_DATA_cmp_eq0015_cy<5>)
+     LUT4:I3->O            1   0.551   0.000  LCD_DATA_or00012 (LCD_DATA_or00012)
+     MUXF5:I0->O           3   0.360   0.933  LCD_DATA_or0001_f5 (LCD_DATA_or0001)
+     LUT4:I3->O            5   0.551   0.921  LCD_DATA_mux0001<1>21 (N30)
+     FDRS:S                    1.026          LCD_DATA_0
+    ----------------------------------------
+    Total                     13.036ns (6.151ns logic, 6.885ns route)
+                                       (47.2% logic, 52.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_1MHz'
+  Total number of paths / destination ports: 528 / 491
+-------------------------------------------------------------------------
+Offset:              10.185ns (Levels of Logic = 8)
+  Source:            SHIFT_IN (PAD)
+  Destination:       top_addra_9 (FF)
+  Destination Clock: CLK_1MHz rising
+
+  Data Path: SHIFT_IN to top_addra_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.821   1.342  SHIFT_IN_IBUF (SHIFT_IN_IBUF)
+     LUT4:I0->O            2   0.551   0.903  top_addra_mux000160_SW0_SW0 (N546)
+     LUT4_D:I3->O          3   0.551   1.246  top_addra_mux000198_1 (top_addra_mux0001981)
+     LUT4:I0->O            1   0.551   0.000  Maddsub_top_addra_share0000_cy<5>11_F (N1156)
+     MUXF5:I0->O           3   0.360   0.975  Maddsub_top_addra_share0000_cy<5>11 (Maddsub_top_addra_share0000_cy<5>)
+     LUT3_D:I2->O          2   0.551   0.903  Maddsub_top_addra_share0000_cy<7>11 (Maddsub_top_addra_share0000_cy<7>)
+     LUT4_L:I3->LO         1   0.551   0.126  top_addra_mux0000<9>_SW1 (N742)
+     LUT4:I3->O            1   0.551   0.000  top_addra_mux0000<9> (top_addra_mux0000<9>)
+     FDRE:D                    0.203          top_addra_9
+    ----------------------------------------
+    Total                     10.185ns (4.690ns logic, 5.495ns route)
+                                       (46.0% logic, 54.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_1kHz'
+  Total number of paths / destination ports: 34 / 34
+-------------------------------------------------------------------------
+Offset:              7.267ns (Levels of Logic = 2)
+  Source:            RSTN (PAD)
+  Destination:       CNT_0 (FF)
+  Destination Clock: CLK_1kHz rising
+
+  Data Path: RSTN to CNT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            90   0.821   2.185  RSTN_IBUF (RSTN_IBUF)
+     INV:I->O            177   0.551   2.684  n2bconverter/rstn_inv1_INV_0 (RSTN_inv)
+     FDRE:R                    1.026          enb
+    ----------------------------------------
+    Total                      7.267ns (2.398ns logic, 4.869ns route)
+                                       (33.0% logic, 67.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_1MHz'
+  Total number of paths / destination ports: 80 / 80
+-------------------------------------------------------------------------
+Offset:              8.229ns (Levels of Logic = 1)
+  Source:            n2bconverter/instate_1 (FF)
+  Destination:       n2bstate<1> (PAD)
+  Source Clock:      CLK_1MHz rising
+
+  Data Path: n2bconverter/instate_1 to n2bstate<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             34   0.720   1.865  n2bconverter/instate_1 (n2bconverter/instate_1)
+     OBUF:I->O                 5.644          n2bstate_1_OBUF (n2bstate<1>)
+    ----------------------------------------
+    Total                      8.229ns (6.364ns logic, 1.865ns route)
+                                       (77.3% logic, 22.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_1kHz'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            LCD_RS (FF)
+  Destination:       LCD_RS (PAD)
+  Source Clock:      CLK_1kHz rising
+
+  Data Path: LCD_RS to LCD_RS
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.720   0.801  LCD_RS (LCD_RS_OBUF)
+     OBUF:I->O                 5.644          LCD_RS_OBUF (LCD_RS)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               7.372ns (Levels of Logic = 2)
+  Source:            CLK_1kHz (PAD)
+  Destination:       LCD_E (PAD)
+
+  Data Path: CLK_1kHz to LCD_E
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.821   0.907  CLK_1kHz_IBUF (LED_OBUF1)
+     OBUF:I->O                 5.644          LCD_E_OBUF (LCD_E)
+    ----------------------------------------
+    Total                      7.372ns (6.465ns logic, 0.907ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 316.00 secs
+Total CPU time to Xst completion: 315.80 secs
+ 
+--> 
+
+Total memory usage is 430220 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   32 (   0 filtered)
+Number of infos    :   15 (   0 filtered)
+

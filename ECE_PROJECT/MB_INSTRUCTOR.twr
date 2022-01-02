@@ -1,0 +1,160 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Util\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml MB_INSTRUCTOR.twx MB_INSTRUCTOR.ncd -o MB_INSTRUCTOR.twr
+MB_INSTRUCTOR.pcf
+
+Design file:              MB_INSTRUCTOR.ncd
+Physical constraint file: MB_INSTRUCTOR.pcf
+Device,package,speed:     xc3s200,pq208,-4 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK_1MHz
+---------------+------------+------------+------------------+--------+
+               |Max Setup to|Max Hold to |                  | Clock  |
+Source         | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------------+--------+
+RSTN           |   10.886(R)|    0.115(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<0>      |    8.194(R)|    0.613(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<1>      |   10.893(R)|   -0.795(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<2>      |   10.632(R)|   -0.114(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<3>      |    9.775(R)|   -0.237(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<4>      |   10.691(R)|   -0.633(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<5>      |   11.375(R)|   -0.456(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<6>      |   11.028(R)|   -0.553(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<7>      |   11.353(R)|   -0.396(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<8>      |   11.462(R)|   -0.454(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<9>      |    3.278(R)|   -1.019(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<10>     |    2.605(R)|    0.851(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<11>     |    2.707(R)|    0.231(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<12>     |    1.823(R)|    0.190(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<13>     |    3.062(R)|   -0.198(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<14>     |    3.369(R)|   -0.130(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<15>     |    1.637(R)|    0.937(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<16>     |    3.921(R)|   -0.606(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<17>     |    4.118(R)|   -0.177(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<18>     |    2.658(R)|    0.314(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<19>     |    1.860(R)|    0.915(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<20>     |    4.141(R)|   -0.078(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<21>     |    3.069(R)|   -0.929(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<22>     |    2.685(R)|   -0.645(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<23>     |    4.106(R)|   -0.624(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<24>     |    4.155(R)|   -0.972(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<25>     |    4.640(R)|   -1.194(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<26>     |    1.883(R)|    0.594(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<27>     |    3.349(R)|    0.231(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<28>     |    3.076(R)|   -0.795(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<29>     |    2.048(R)|    1.184(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<30>     |    3.652(R)|    0.597(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<31>     |    2.639(R)|    0.919(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<32>     |    8.383(R)|   -0.753(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<33>     |    2.937(R)|    0.115(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<34>     |    3.343(R)|    0.853(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<35>     |    3.014(R)|    0.009(R)|CLK_1MHz_BUFGP    |   0.000|
+inf_start      |    3.186(R)|   -1.081(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<0>|    8.941(R)|   -0.777(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<1>|    9.601(R)|   -1.281(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<2>|   10.106(R)|   -1.710(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<3>|    9.474(R)|   -1.180(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<4>|    8.734(R)|   -0.613(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<5>|    9.552(R)|   -1.242(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<6>|   10.526(R)|   -2.047(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<7>|   10.446(R)|   -1.958(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<8>|    9.668(R)|   -1.361(R)|CLK_1MHz_BUFGP    |   0.000|
+---------------+------------+------------+------------------+--------+
+
+Clock CLK_1MHz to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+addr_inf    |   10.289(R)|CLK_1MHz_BUFGP    |   0.000|
+en_inf      |   10.996(R)|CLK_1MHz_BUFGP    |   0.000|
+finish      |    9.673(R)|CLK_1MHz_BUFGP    |   0.000|
+overflow    |   13.294(R)|CLK_1MHz_BUFGP    |   0.000|
+result<0>   |    9.077(R)|CLK_1MHz_BUFGP    |   0.000|
+result<1>   |    9.437(R)|CLK_1MHz_BUFGP    |   0.000|
+result<2>   |    9.486(R)|CLK_1MHz_BUFGP    |   0.000|
+result<3>   |    9.577(R)|CLK_1MHz_BUFGP    |   0.000|
+result<4>   |    9.183(R)|CLK_1MHz_BUFGP    |   0.000|
+result<5>   |    9.541(R)|CLK_1MHz_BUFGP    |   0.000|
+result<6>   |    9.758(R)|CLK_1MHz_BUFGP    |   0.000|
+result<7>   |    9.752(R)|CLK_1MHz_BUFGP    |   0.000|
+result<8>   |    8.390(R)|CLK_1MHz_BUFGP    |   0.000|
+result<9>   |    8.385(R)|CLK_1MHz_BUFGP    |   0.000|
+result<10>  |    8.385(R)|CLK_1MHz_BUFGP    |   0.000|
+result<11>  |    8.379(R)|CLK_1MHz_BUFGP    |   0.000|
+result<12>  |    9.538(R)|CLK_1MHz_BUFGP    |   0.000|
+result<13>  |    9.219(R)|CLK_1MHz_BUFGP    |   0.000|
+result<14>  |    9.903(R)|CLK_1MHz_BUFGP    |   0.000|
+result<15>  |    9.234(R)|CLK_1MHz_BUFGP    |   0.000|
+result<16>  |    8.379(R)|CLK_1MHz_BUFGP    |   0.000|
+result<17>  |    9.188(R)|CLK_1MHz_BUFGP    |   0.000|
+result<18>  |   10.107(R)|CLK_1MHz_BUFGP    |   0.000|
+result<19>  |    9.526(R)|CLK_1MHz_BUFGP    |   0.000|
+result<20>  |    8.379(R)|CLK_1MHz_BUFGP    |   0.000|
+result<21>  |    9.128(R)|CLK_1MHz_BUFGP    |   0.000|
+result<22>  |   10.004(R)|CLK_1MHz_BUFGP    |   0.000|
+result<23>  |    9.560(R)|CLK_1MHz_BUFGP    |   0.000|
+result<24>  |    8.379(R)|CLK_1MHz_BUFGP    |   0.000|
+result<25>  |    8.379(R)|CLK_1MHz_BUFGP    |   0.000|
+result<26>  |    8.769(R)|CLK_1MHz_BUFGP    |   0.000|
+result<27>  |    8.812(R)|CLK_1MHz_BUFGP    |   0.000|
+result<28>  |    8.379(R)|CLK_1MHz_BUFGP    |   0.000|
+result<29>  |    8.379(R)|CLK_1MHz_BUFGP    |   0.000|
+result<30>  |    9.193(R)|CLK_1MHz_BUFGP    |   0.000|
+result<31>  |    9.218(R)|CLK_1MHz_BUFGP    |   0.000|
+syntax_error|   10.010(R)|CLK_1MHz_BUFGP    |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK_1MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_1MHz       |   15.819|   10.417|    6.119|         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Dec 01 08:41:21 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 172 MB
+
+
+

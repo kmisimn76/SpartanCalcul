@@ -1,0 +1,52 @@
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 MB_I2P_FIX_ARRANGER.ngc MB_I2P_FIX_ARRANGER.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_I2P_FIX_ARRANGER_map.ncd MB_I2P_FIX_ARRANGER.ngd MB_I2P_FIX_ARRANGER.pcf 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 MB_I2P_FIX_ARRANGER.ngc MB_I2P_FIX_ARRANGER.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_I2P_FIX_ARRANGER_map.ncd MB_I2P_FIX_ARRANGER.ngd MB_I2P_FIX_ARRANGER.pcf 
+par -w -intstyle ise -ol high -t 1 MB_I2P_FIX_ARRANGER_map.ncd MB_I2P_FIX_ARRANGER.ncd MB_I2P_FIX_ARRANGER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_I2P_FIX_ARRANGER.twx MB_I2P_FIX_ARRANGER.ncd -o MB_I2P_FIX_ARRANGER.twr MB_I2P_FIX_ARRANGER.pcf 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 MB_I2P_FIX_ARRANGER.ngc MB_I2P_FIX_ARRANGER.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_I2P_FIX_ARRANGER_map.ncd MB_I2P_FIX_ARRANGER.ngd MB_I2P_FIX_ARRANGER.pcf 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 MB_I2P_FIX_ARRANGER.ngc MB_I2P_FIX_ARRANGER.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_I2P_FIX_ARRANGER_map.ncd MB_I2P_FIX_ARRANGER.ngd MB_I2P_FIX_ARRANGER.pcf 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 MB_I2P_FIX_ARRANGER.ngc MB_I2P_FIX_ARRANGER.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_I2P_FIX_ARRANGER_map.ncd MB_I2P_FIX_ARRANGER.ngd MB_I2P_FIX_ARRANGER.pcf 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 MB_I2P_FIX_ARRANGER.ngc MB_I2P_FIX_ARRANGER.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_I2P_FIX_ARRANGER_map.ncd MB_I2P_FIX_ARRANGER.ngd MB_I2P_FIX_ARRANGER.pcf 
+par -w -intstyle ise -ol high -t 1 MB_I2P_FIX_ARRANGER_map.ncd MB_I2P_FIX_ARRANGER.ncd MB_I2P_FIX_ARRANGER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_I2P_FIX_ARRANGER.twx MB_I2P_FIX_ARRANGER.ncd -o MB_I2P_FIX_ARRANGER.twr MB_I2P_FIX_ARRANGER.pcf 
+netgen -intstyle ise -s 4  -pcf MB_I2P_FIX_ARRANGER.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_I2P_FIX_ARRANGER.ncd MB_I2P_FIX_ARRANGER_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 MB_I2P_FIX_ARRANGER.ngc MB_I2P_FIX_ARRANGER.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o MB_I2P_FIX_ARRANGER_map.ncd MB_I2P_FIX_ARRANGER.ngd MB_I2P_FIX_ARRANGER.pcf 
+par -w -intstyle ise -ol high -t 1 MB_I2P_FIX_ARRANGER_map.ncd MB_I2P_FIX_ARRANGER.ncd MB_I2P_FIX_ARRANGER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MB_I2P_FIX_ARRANGER.twx MB_I2P_FIX_ARRANGER.ncd -o MB_I2P_FIX_ARRANGER.twr MB_I2P_FIX_ARRANGER.pcf 
+netgen -intstyle ise -s 4  -pcf MB_I2P_FIX_ARRANGER.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim MB_I2P_FIX_ARRANGER.ncd MB_I2P_FIX_ARRANGER_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.xst" -ofn "C:/Users/gmlak/Desktop/Project/Porject_exp_11.27/Porject_exp/Porject_exp/MB_I2P_FIX_ARRANGER.syr" 

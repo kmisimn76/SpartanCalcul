@@ -1,0 +1,2 @@
+verilog isim_temp "netgen/par/MB_INTERFACE_timesim.v"
+verilog isim_temp "TB_INTERFACE.v"

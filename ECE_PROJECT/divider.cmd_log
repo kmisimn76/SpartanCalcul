@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/divider.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/divider.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/divider.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/divider.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/divider.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/divider.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 divider.ngc divider.ngd  
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/divider.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/divider.syr" 

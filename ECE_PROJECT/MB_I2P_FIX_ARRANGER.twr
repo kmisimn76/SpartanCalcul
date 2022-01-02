@@ -1,0 +1,178 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Util\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml MB_I2P_FIX_ARRANGER.twx MB_I2P_FIX_ARRANGER.ncd -o
+MB_I2P_FIX_ARRANGER.twr MB_I2P_FIX_ARRANGER.pcf
+
+Design file:              MB_I2P_FIX_ARRANGER.ncd
+Physical constraint file: MB_I2P_FIX_ARRANGER.pcf
+Device,package,speed:     xc3s200,pq208,-4 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK_1MHz
+---------------+------------+------------+------------------+--------+
+               |Max Setup to|Max Hold to |                  | Clock  |
+Source         | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------------+--------+
+RSTN           |    5.776(R)|   -0.503(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<0>      |    7.008(R)|   -0.248(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<1>      |    8.614(R)|    0.209(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<2>      |    9.143(R)|   -0.121(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<3>      |    8.697(R)|    0.808(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<4>      |    8.996(R)|   -0.293(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<5>      |    7.551(R)|    0.555(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<6>      |    8.765(R)|   -0.378(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<7>      |    9.432(R)|   -0.128(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<8>      |    8.074(R)|    0.282(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<9>      |    2.453(R)|   -0.378(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<10>     |    2.576(R)|    0.326(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<11>     |    2.471(R)|   -0.388(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<12>     |    1.487(R)|    0.340(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<13>     |    1.971(R)|    0.159(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<14>     |    2.304(R)|    0.029(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<15>     |    1.749(R)|    0.242(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<16>     |    1.250(R)|    0.767(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<17>     |    2.870(R)|   -0.565(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<18>     |    2.553(R)|   -0.254(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<19>     |    2.455(R)|   -0.473(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<20>     |    1.992(R)|    0.521(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<21>     |    1.460(R)|    0.618(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<22>     |    2.700(R)|   -0.250(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<23>     |    1.877(R)|    0.184(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<24>     |    2.339(R)|    0.417(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<25>     |    2.038(R)|    0.546(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<26>     |    2.708(R)|   -0.511(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<27>     |    1.955(R)|    0.035(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<28>     |    2.420(R)|   -0.034(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<29>     |    1.952(R)|    0.541(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<30>     |    2.664(R)|   -0.496(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<31>     |    1.532(R)|    0.244(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<32>     |    6.094(R)|   -0.184(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<33>     |    3.668(R)|   -0.356(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<34>     |    1.463(R)|    0.761(R)|CLK_1MHz_BUFGP    |   0.000|
+do_inf<35>     |    1.445(R)|    0.565(R)|CLK_1MHz_BUFGP    |   0.000|
+start          |    1.844(R)|   -0.007(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<0>|    9.169(R)|   -1.267(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<1>|    9.041(R)|   -1.139(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<2>|    8.832(R)|   -0.997(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<3>|    8.946(R)|   -1.064(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<4>|    8.785(R)|   -0.959(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<5>|    9.032(R)|   -1.132(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<6>|    8.255(R)|   -0.536(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<7>|    8.398(R)|   -0.625(R)|CLK_1MHz_BUFGP    |   0.000|
+top_addr_inf<8>|    7.911(R)|   -0.261(R)|CLK_1MHz_BUFGP    |   0.000|
+---------------+------------+------------+------------------+--------+
+
+Clock CLK_1MHz to Pad
+--------------+------------+------------------+--------+
+              | clk (edge) |                  | Clock  |
+Destination   |   to PAD   |Internal Clock(s) | Phase  |
+--------------+------------+------------------+--------+
+addr_inf<0>   |   10.484(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_inf<1>   |    9.786(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_inf<2>   |    9.989(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_inf<3>   |    9.976(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_inf<4>   |    9.852(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_inf<5>   |    9.885(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_inf<6>   |   10.234(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_inf<7>   |   10.139(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_inf<8>   |    9.855(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_posf_b<0>|   10.365(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_posf_b<1>|   10.152(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_posf_b<2>|   10.375(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_posf_b<3>|   10.617(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_posf_b<4>|   10.077(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_posf_b<5>|   10.516(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_posf_b<6>|   10.347(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_posf_b<7>|   10.023(R)|CLK_1MHz_BUFGP    |   0.000|
+addr_posf_b<8>|   10.032(R)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<0>  |   11.254(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<1>  |   11.003(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<2>  |   10.795(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<3>  |   10.861(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<4>  |   11.099(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<5>  |   10.961(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<6>  |   10.479(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<7>  |   11.709(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<8>  |   11.235(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<9>  |   11.763(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<10> |   11.527(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<11> |   12.094(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<12> |   11.210(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<13> |   11.192(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<14> |   11.227(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<15> |   11.521(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<16> |   11.706(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<17> |   11.075(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<18> |   12.241(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<19> |   11.804(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<20> |   11.833(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<21> |   11.839(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<22> |   11.262(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<23> |   11.586(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<24> |   11.455(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<25> |   11.278(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<26> |   11.076(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<27> |   11.109(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<28> |   11.459(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<29> |   10.842(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<30> |   11.736(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<31> |   11.895(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<32> |   12.015(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<33> |   11.784(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<34> |   11.787(F)|CLK_1MHz_BUFGP    |   0.000|
+do_posf_b<35> |   11.446(F)|CLK_1MHz_BUFGP    |   0.000|
+en_inf        |   10.228(R)|CLK_1MHz_BUFGP    |   0.000|
+--------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK_1MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_1MHz       |    9.980|    9.503|    6.182|         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed Nov 29 22:31:27 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 156 MB
+
+
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="5">
+<DesignStatistics TimeStamp="Wed Nov 29 22:30:47 2017"><group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="5">
+<attrib name="value" value="103"/></item>
+<item name="AGG_IO" rev="5">
+<attrib name="value" value="103"/></item>
+<item name="AGG_SLICE" rev="5">
+<attrib name="value" value="118"/></item>
+<item name="NUM_4_INPUT_LUT" rev="5">
+<attrib name="value" value="172"/></item>
+<item name="NUM_BONDED_IOB" rev="5">
+<attrib name="value" value="103"/></item>
+<item name="NUM_BUFGMUX" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="NUM_CYMUX" rev="5">
+<attrib name="value" value="42"/></item>
+<item name="NUM_LUT_RT" rev="5">
+<attrib name="value" value="16"/></item>
+<item name="NUM_RAMB16" rev="5">
+<attrib name="value" value="2"/></item>
+<item name="NUM_SLICEL" rev="5">
+<attrib name="value" value="118"/></item>
+<item name="NUM_SLICE_FF" rev="5">
+<attrib name="value" value="121"/></item>
+<item name="NUM_XOR" rev="5">
+<attrib name="value" value="27"/></item>
+</group>
+</DesignStatistics>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

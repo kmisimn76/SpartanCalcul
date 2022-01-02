@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\gmlak\Desktop\Project\Porject_exp_11.27\Porject_exp\Porject_exp\MB_INTERFACE.ncd
+OUTFILE=C:\Users\gmlak\Desktop\Project\Porject_exp_11.27\Porject_exp\Porject_exp\MB_INTERFACE.bit
+FAMILY=Spartan3
+PART=xc3s200-4pq208
+WORKINGDIR=C:\Users\gmlak\Desktop\Project\Porject_exp_11.27\Porject_exp\Porject_exp
+LICENSE=WebPack
+USER_INFO=211392952_0_0_338

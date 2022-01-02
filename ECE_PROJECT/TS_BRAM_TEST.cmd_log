@@ -1,0 +1,153 @@
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "D:/prj/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+bitgen -intstyle ise -f TS_BRAM_TEST.ut TS_BRAM_TEST.ncd 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+par -w -intstyle ise -ol high -t 1 TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ncd TS_BRAM_TEST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TS_BRAM_TEST.twx TS_BRAM_TEST.ncd -o TS_BRAM_TEST.twr TS_BRAM_TEST.pcf -ucf TS_BRAM_TEST.ucf 
+netgen -intstyle ise -s 4  -pcf TS_BRAM_TEST.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim TS_BRAM_TEST.ncd TS_BRAM_TEST_timesim.v 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TS_BRAM_TEST.ucf -p xc3s200-pq208-4 TS_BRAM_TEST.ngc TS_BRAM_TEST.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o TS_BRAM_TEST_map.ncd TS_BRAM_TEST.ngd TS_BRAM_TEST.pcf 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/TS_BRAM_TEST.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/TS_BRAM_TEST.syr" 

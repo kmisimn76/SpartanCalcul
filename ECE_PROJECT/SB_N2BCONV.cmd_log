@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_N2BCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_N2BCONV.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_N2BCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_N2BCONV.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_N2BCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_N2BCONV.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_N2BCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_N2BCONV.syr" 
+xst -intstyle ise -ifn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_N2BCONV.xst" -ofn "C:/Users/gmlak/Desktop/Project_exp_11.20/Porject_exp/Porject_exp/SB_N2BCONV.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 SB_N2BCONV.ngc SB_N2BCONV.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o SB_N2BCONV_map.ncd SB_N2BCONV.ngd SB_N2BCONV.pcf 
+par -w -intstyle ise -ol high -t 1 SB_N2BCONV_map.ncd SB_N2BCONV.ncd SB_N2BCONV.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SB_N2BCONV.twx SB_N2BCONV.ncd -o SB_N2BCONV.twr SB_N2BCONV.pcf 
+netgen -intstyle ise -s 4  -pcf SB_N2BCONV.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim SB_N2BCONV.ncd SB_N2BCONV_timesim.v 

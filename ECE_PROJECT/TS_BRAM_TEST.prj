@@ -1,0 +1,2 @@
+verilog work "sdp_bram.v"
+verilog work "TS_BRAM_TEST.v"
